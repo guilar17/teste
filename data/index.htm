@@ -71,15 +71,13 @@
 #pwmPanel {width:90px;}
 #pwm { font-size:10pt; width:30px; height:22px; display:inline-block;}
 /* LED */
-.ledreddim{background: #5B0000; }
-.ledgreendim{ background: #01290C;}
-.round-led-circle {width: 23px; height:0; padding-bottom: 23px;border-radius: 50%; border-style: outset; overflow:hidden;  display: inline-block;}
-span.round-led { width:12px; height:12px; display: table-cell;  text-align:center; vertical-align:middle; font-weight:bold; text-decoration:none;}	
+/*.round-led-circle {width: 23px; height:0; padding-bottom: 23px;border-radius: 50%; border-style: outset; overflow:hidden;  display: inline-block;}
+span.round-led { width:12px; height:12px; display: table-cell;  text-align:center; vertical-align:middle; font-weight:bold; text-decoration:none;}	*/
 a { -webkit-user-select: none; -webkit-touch-callout: none;}
 
 #status-p table, #status-p tr, #status-p td { border:0px; margin:0px;}
 #ctrlpanel { width: fit-content; margin-left:auto; margin-right:auto; border: 1px solid rgb(0, 0, 0); display:inline-block; background-color: #292d31; padding-bottom: inherit;}
-table .ledpanel { text-align:center; width:100%; }
+table .ledpanel { text-align:center; width:100%;}
 #btnpanel {width:fit-content; height:fit-content; position:relative;}
 #btnpanel td { width:25%;}
 #btngap {height:5px;}
@@ -389,20 +387,17 @@ $(function(){
                                 <tbody>
                                     <tr>
                                         <td class="leds">
-                                            <div id="heatled" class="round-led-circle ledreddim"><span class="round-led"></span></div>
-                                            <div class="label">HEAT</div>
+                                            <button id="heatled" type="button" class="btn btn-success" ><i class="fa fa-fire" style="font-size:24px ; color: #c8c8c8"></i></button>
                                         </td>
                                         <td class="leds dualheating">
-                                            <div id="heat2led" class="round-led-circle ledreddim"><span class="round-led"></span></div>
-                                            <div class="label">HE#2</div>
+                                            <button id="heat2led" type="button" class="btn btn-success" ><i class="fa fa-fire" style="font-size:24px ; color: #c8c8c8"></i></button>
                                         </td>
                                         <td class="leds" id="auxledcon">
                                             <div id="auxled" class="round-led-circle ledreddim"><span class="round-led"></span></div>
                                             <div class="label">SPGW</div>
                                         </td>
                                         <td class="leds">
-                                            <div id="pumpled" class="round-led-circle ledgreendim"><span class="round-led"></span></div>
-                                            <div class="label"><span id="pump-led-label">PUMP</span></div>
+                                            <button id="pumpled" type="button" class="btn btn-success" ><i class="fa fa-refresh" style="font-size:24px ; color: #c8c8c8"></i></button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -430,7 +425,7 @@ $(function(){
                         <td>
                             <div id="timerPanel" class="panel">
                                 <div id="timer" class="NUM">01:59:38</div>
-                                <div class="label">Time</div>
+                                <div class="label"><i class="fa fa-clock-o" style="font-size:18px"></i></div>
                             </div>
                         </td>
                     </tr>
