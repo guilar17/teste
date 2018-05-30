@@ -6,6 +6,7 @@
 
     <title>BrewManiac</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="lib.css"> -->
     <!-- <script type="text/javascript" src="js/lib.js"></script> -->
     <script type="text/javascript" src="bm.033.js"></script>
@@ -24,7 +25,7 @@
 	body {text-align:center;}
 .ui-button,  .ui-button-text .ui-button{  font-size: 10px !important; }
 	/* navi-bar */
-	#sb-site {background-color:#1c1e22;}
+	#sb-site {background-color:#23262a;}
 	.navicon-line {width: 24px; height: 4px; border-radius: 1px; margin-bottom: 3px; background-color: #FFFFFF;}
     .top-bar-block {display: inline-block; color:white; font-style: italic; font-family:Georgia, serif;}
     #menubar {position:absolute; left:10px;}
@@ -36,7 +37,7 @@
   	#top-bar {background-color:#222;}
 	/* general */	
 	.setting-category{ text-align:center; font-weight:bold; font-size: 1.2em; background-color:yellow;}
-	.setting-subcategory{background-color:#1c1e22;}
+	.setting-subcategory{background-color:#23262a;}
   	#status-p,#settings-p,#automation-p,#sensors-p,#about-p,#top-bar {margin: auto; padding:10px; width:100%}
   	#about-p {text-align:left;}
   	ul {text-align:left;}
@@ -77,19 +78,19 @@ span.round-led { width:12px; height:12px; display: table-cell;  text-align:cente
 a { -webkit-user-select: none; -webkit-touch-callout: none;}
 
 #status-p table, #status-p tr, #status-p td { border:0px; margin:0px;}
-#ctrlpanel { width: fit-content; margin-left:auto; margin-right:auto; display:inline-block; background-color: #272b30; padding-bottom: inherit;}
+#ctrlpanel { width: fit-content; margin-left:auto; margin-right:auto; border: 1px solid rgb(0, 0, 0); display:inline-block; background-color: #292d31; padding-bottom: inherit;}
 table .ledpanel { text-align:center; width:100%; }
 #btnpanel {width:fit-content; height:fit-content; position:relative;}
 #btnpanel td { width:25%;}
 #btngap {height:5px;}
 .btn-success {
-            border: black;
+            border-color: black;
             background: -webkit-gradient(linear, left top, left bottom, from(#484e55), to(#313539));
             background: -moz-linear-gradient(top, #484e55, #313539);
             filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#484e55', EndColorStr='#313539');           
         }
-#btncover { position:absolute; left:0px; top:0px; width:100%; height:100%; z-index:1000; background-color:#FFF; border-radius:0px 0px 6px 6px; opacity: 0.6;}
-.round-button-circle { color: white; width: 52px; height:0; padding-bottom: 52px; border-radius: 50%; border-style:groove; overflow:hidden; background: #272b30;  margin:2px;}
+/*#btncover { position:absolute; left:0px; top:0px; width:100%; height:100%; z-index:1000; background-color:#FFF; border-radius:0px 0px 6px 6px; opacity: 0.6;}*/
+.round-button-circle { color: white; width: 52px; height:0; padding-bottom: 52px; border-radius: 50%; border-style:groove; overflow:hidden; background: #292d31;  margin:2px;}
 
 a.round-button { width:52px; height:52px; display: table-cell;  text-align:center; vertical-align:middle; color:#CCCCCC; font-weight:bold; text-decoration:none; font-size:8pt;}
 
@@ -411,9 +412,9 @@ $(function(){
                     <tr>
                         <td rowspan="2">
                             <div id="maintemp" class="panel">
-                                <div class="Tcon"><span class="label TID">T:</span><span id="currenttemp" class="temperature NUM">100.75</span><span class="tmp_unit label">&deg;C</span></div>
+                                <div class="Tcon"><span class="label TID"><i class="fa fa-thermometer" style="font-size:24px"></i></span><span id="currenttemp" class="temperature NUM">100.75</span><span class="tmp_unit label">&deg;C</span></div>
                                 <hr id="currenttempend">
-                                <span class="label">SP</span><span id="setpoint" class="temperature NUM">64.75</span><span class="tmp_unit label">&deg;C</span>
+                                <span class="label"><i class="fa fa-crosshairs" style="font-size:18px"></i></span><span id="setpoint" class="temperature NUM">64.75</span><span class="tmp_unit label">&deg;C</span>
                             </div>
                         </td>
                         <td>
