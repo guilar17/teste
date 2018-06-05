@@ -19191,7 +19191,7 @@ var BMScreen = {
     HC_active: "#FE1E1E",
     HC_inactive: "#5B0000",
     HC_pause: "#DE912F",
-    PC_active: "#70FC57",
+    PC_active: "#62c462",
     PC_inactive: "#01290C",
     PC_pause: "#22C6AB",
     spargesensor: -1,
