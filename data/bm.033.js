@@ -18238,9 +18238,9 @@ var BMSetting = {
         if ("s_spenable" in s) $(".spargeheating").show();
         if ("s_preheat" in s) $(".dualheating").show();
         this.display();
-        if ($("#esetting").button("option", "icons").primary != "ui-icon-pencil") {
+        if ($("#esetting").button("option", "icons").primary != "") {
             $("#esetting").button("option", "icons", {
-                primary: "ui-icon-pencil"
+                primary: ""
             });
             $("#savesetting").hide();
             $("#importsetting").hide();
@@ -18331,7 +18331,7 @@ var BMSetting = {
             });
             b.display();
             $("#esetting").button("option", "icons", {
-                primary: "ui-icon-pencil"
+                primary: ""
             });
             $("#savesetting").hide();
             $("#importsetting").hide();
@@ -18422,10 +18422,10 @@ var BMSetting = {
             disabled: false,
             text: false,
             icons: {
-                primary: "ui-icon-pencil"
+                primary: ""
             }
         }).click(function() {
-            if ($("#esetting").button("option", "icons").primary == "ui-icon-pencil") {
+            if ($("#esetting").button("option", "icons").primary == "") {
                 $("#esetting").button("option", "icons", {
                     primary: "ui-icon-arrowreturnthick-1-w"
                 });
@@ -18435,7 +18435,7 @@ var BMSetting = {
                 b.editsettings()
             } else {
                 $("#esetting").button("option", "icons", {
-                    primary: "ui-icon-pencil"
+                    primary: ""
                 });
                 $("#savesetting").hide();
                 $("#importsetting").hide();
@@ -18455,7 +18455,7 @@ var BMSetting = {
             }
             if (Object.keys(b.editing).length == 0) {
                 $("#esetting").button("option", "icons", {
-                    primary: "ui-icon-pencil"
+                    primary: ""
                 });
                 $("#savesetting").hide();
                 b.display();
@@ -18515,13 +18515,13 @@ var BMRecipe = {
     updateRecipe: function(d) {
         this.auto = d;
         this.display();
-        if ($("#editauto").button("option", "icons").primary != "ui-icon-pencil") {
+        if ($("#editauto").button("option", "icons").primary != "") {
             this.stopEditRecipe()
         }
     },
     unitCelius: function(a) {
         this.celius = a;
-        if ($("#editauto").button("option", "icons").primary != "ui-icon-pencil") {
+        if ($("#editauto").button("option", "icons").primary != "") {
             this.stopEditRecipe()
         }
         if (typeof this.auto.rest_tp !== "undefined") this.display()
@@ -18735,7 +18735,7 @@ var BMRecipe = {
     },
     stopEditRecipe: function() {
         $("#editauto").button("option", "icons", {
-            primary: "ui-icon-pencil"
+            primary: ""
         });
         $("#saveauto").hide();
         $("#addhop").hide();
@@ -18889,10 +18889,10 @@ var BMRecipe = {
             disabled: false,
             text: false,
             icons: {
-                primary: "ui-icon-pencil"
+                primary: ""
             }
         }).click(function() {
-            if ($("#editauto").button("option", "icons").primary == "ui-icon-pencil") {
+            if ($("#editauto").button("option", "icons").primary == "") {
                 b.edit();
                 $("#editauto").button("option", "icons", {
                     primary: "ui-icon-arrowreturnthick-1-w"
