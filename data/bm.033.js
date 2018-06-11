@@ -18238,9 +18238,9 @@ var BMSetting = {
         if ("s_spenable" in s) $(".spargeheating").show();
         if ("s_preheat" in s) $(".dualheating").show();
         this.display();
-        if ($("#esetting").button("option", "icons").primary != "") {
+        if ($("#esetting").button("option", "icons").primary != "ui-icon-pencil") {
             $("#esetting").button("option", "icons", {
-                primary: ""
+                primary: "ui-icon-pencil"
             });
             $("#savesetting").hide();
             $("#importsetting").hide();
@@ -18331,7 +18331,7 @@ var BMSetting = {
             });
             b.display();
             $("#esetting").button("option", "icons", {
-                primary: ""
+                primary: "ui-icon-pencil"
             });
             $("#savesetting").hide();
             $("#importsetting").hide();
@@ -18422,10 +18422,10 @@ var BMSetting = {
             disabled: false,
             text: false,
             icons: {
-                primary: ""
+                primary: "ui-icon-pencil"
             }
         }).click(function() {
-            if ($("#esetting").button("option", "icons").primary == "") {
+            if ($("#esetting").button("option", "icons").primary == "ui-icon-pencil") {
                 $("#esetting").button("option", "icons", {
                     primary: "ui-icon-arrowreturnthick-1-w"
                 });
@@ -18435,7 +18435,7 @@ var BMSetting = {
                 b.editsettings()
             } else {
                 $("#esetting").button("option", "icons", {
-                    primary: ""
+                    primary: "ui-icon-pencil"
                 });
                 $("#savesetting").hide();
                 $("#importsetting").hide();
@@ -18455,7 +18455,7 @@ var BMSetting = {
             }
             if (Object.keys(b.editing).length == 0) {
                 $("#esetting").button("option", "icons", {
-                    primary: ""
+                    primary: "ui-icon-pencil"
                 });
                 $("#savesetting").hide();
                 b.display();
