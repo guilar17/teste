@@ -155,7 +155,7 @@
         }
 
         button.ui-button-icon-only {
-            width: 2.4em
+            width: 4.4em
         }
 
         .ui-button-icons-only {
@@ -2175,7 +2175,7 @@
         #top-bar {
             margin: auto;
             padding: 10px;
-            width: 100%
+            width: 100%;
         }
 
         #about-p {
@@ -2195,6 +2195,7 @@
         }
 
         .section {
+            color: #c8c8c8;
             font-size: 18px;
             font-weight: bold
         }
@@ -2365,6 +2366,8 @@
         }
 
         .btn-secondary {
+            height: 4em;
+            width: 4.4em;
             border-color: black;
             background: -webkit-gradient(linear, left top, left bottom, from(#484e55), to(#313539));
             background: -moz-linear-gradient(top, #484e55, #313539);
@@ -3277,10 +3280,10 @@
 
         <div class=fn id=settings-p>
             <span class=section>Settings</span>
-            <button id="esetting" type="button" class="btn btn-secondary" style="width: 44px; height: 44px;">Set <i class="ui-icon-pencil;" style="font-size:24px;"></i></button>
-            <button id=savesetting class=editbtn>Save</button>
-            <button id=exportsetting class=editbtn>Export</button>
-            <button id=importsetting class=editbtn>Import</button>
+            <button id="esetting" type="button" class="btn btn-secondary"><i class="fa fa-pencil" style="font-size:18px;"></i></button>
+            <button id=savesetting type="button" class="btn btn-secondary"><i class="fa fa-save" style="font-size:18px;"></i></button>
+            <button id=exportsetting type="button" class="btn btn-secondary"><i class="fa fa-folder-open-o" style="font-size:18px;"></i></button>
+            <button id=importsetting type="button" class="btn btn-secondary"><i class="fa fa-folder-open-o" style="font-size:18px;"></i></button>
             <table>
                 <tr>
                     <td colspan=2 class=setting-category>PID — PWM</td>
