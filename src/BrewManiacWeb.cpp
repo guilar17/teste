@@ -83,7 +83,7 @@ void BrewManiacWeb::brewEvent(uint8_t event)
 
 void BrewManiacWeb::updateSettingTemperature(void)
 {
-	if(_eventHandler) _eventHandler(this,BmwEventSettingChanged);
+	if(_eventHandler) _eventHandler(this,BmwEventSettingTemperatureChanged);
 }
 void BrewManiacWeb::updatePwm(uint8_t pwm)
 {
@@ -598,5 +598,5 @@ bool BrewManiacWeb::updateAutomation(String& json)
 
 void BrewManiacWeb::sendButton(byte mask,bool longPressed)
 {
-	virtualButtonPress(mask & 0xF,longPressed);
+	virtualButtonPress(mask,longPressed);
 }

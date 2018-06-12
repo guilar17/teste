@@ -1,24 +1,24 @@
 <!doctype html>
-<html lang="en">
+<html lang=en>
 
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <title>BrewManiac</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <meta charset=utf-8 name=viewport content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+	<title>BrewManiac</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link rel="stylesheet" href="lib.css"> -->
-    <!-- <script type="text/javascript" src="js/lib.js"></script> -->
-    <script type="text/javascript" src="bm.033.js"></script>
-
-    <style>
+    <script>
+        var BMLIB_VERSION = "0.4.1";
+    </script>
+    <script type=text/javascript src=bm.041.js></script>
+ 	<style>
         /*! jQuery UI - v1.11.4 - 2015-03-11
 * http://jqueryui.com
 * Includes: core.css, accordion.css, autocomplete.css, button.css, datepicker.css, dialog.css, draggable.css, menu.css, progressbar.css, resizable.css, selectable.css, selectmenu.css, slider.css, sortable.css, spinner.css, tabs.css, tooltip.css, theme.css
 * To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Trebuchet%20MS%2CTahoma%2CVerdana%2CArial%2Csans-serif&fwDefault=bold&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=f6a828&bgTextureHeader=gloss_wave&bgImgOpacityHeader=35&borderColorHeader=e78f08&fcHeader=ffffff&iconColorHeader=ffffff&bgColorContent=eeeeee&bgTextureContent=highlight_soft&bgImgOpacityContent=100&borderColorContent=dddddd&fcContent=333333&iconColorContent=222222&bgColorDefault=f6f6f6&bgTextureDefault=glass&bgImgOpacityDefault=100&borderColorDefault=cccccc&fcDefault=1c94c4&iconColorDefault=ef8c08&bgColorHover=fdf5ce&bgTextureHover=glass&bgImgOpacityHover=100&borderColorHover=fbcb09&fcHover=c77405&iconColorHover=ef8c08&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=fbd850&fcActive=eb8f00&iconColorActive=ef8c08&bgColorHighlight=ffe45c&bgTextureHighlight=highlight_soft&bgImgOpacityHighlight=75&borderColorHighlight=fed22f&fcHighlight=363636&iconColorHighlight=228ef1&bgColorError=b81900&bgTextureError=diagonals_thick&bgImgOpacityError=18&borderColorError=cd0a0a&fcError=ffffff&iconColorError=ffd27a&bgColorOverlay=666666&bgTextureOverlay=diagonals_thick&bgImgOpacityOverlay=20&opacityOverlay=50&bgColorShadow=000000&bgTextureShadow=flat&bgImgOpacityShadow=10&opacityShadow=20&thicknessShadow=5px&offsetTopShadow=-5px&offsetLeftShadow=-5px&cornerRadiusShadow=5px
 * Copyright 2015 jQuery Foundation and other contributors; Licensed MIT */
 
-        .ui-helper-hidden {
+		.ui-helper-hidden {
             display: none
         }
 
@@ -162,7 +162,7 @@
             width: 3.4em
         }
 
-        button .ui-button-icons-only {
+        button.ui-button-icons-only {
             width: 3.7em
         }
 
@@ -585,7 +585,7 @@
             background: url("data:image/gif;base64,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");
             height: 100%;
             filter: alpha(opacity=25);
-            opacity: 0.25
+            opacity: .25
         }
 
         .ui-progressbar-indeterminate .ui-progressbar-value {
@@ -598,7 +598,7 @@
 
         .ui-resizable-handle {
             position: absolute;
-            font-size: 0.1px;
+            font-size: .1px;
             display: block;
             -ms-touch-action: none;
             touch-action: none
@@ -703,8 +703,8 @@
             font-size: 1em;
             font-weight: bold;
             line-height: 1.5;
-            padding: 2px 0.4em;
-            margin: 0.5em 0 0 0;
+            padding: 2px .4em;
+            margin: .5em 0 0 0;
             height: auto;
             border: 0
         }
@@ -722,7 +722,7 @@
         }
 
         .ui-selectmenu-button span.ui-icon {
-            right: 0.5em;
+            right: .5em;
             left: auto;
             margin-top: -8px;
             position: absolute;
@@ -731,7 +731,7 @@
 
         .ui-selectmenu-button span.ui-selectmenu-text {
             text-align: left;
-            padding: 0.4em 2.1em 0.4em 1em;
+            padding: .4em 2.1em .4em 1em;
             display: block;
             line-height: 1.4;
             overflow: hidden;
@@ -1872,8 +1872,6 @@
             border-radius: 5px
         }
 
-        /* Slidebars 0.10.3 (http://plugins.adchsm.me/slidebars/) written by Adam Smith (http://www.adchsm.me/) released under MIT License (http://plugins.adchsm.me/slidebars/license.txt) */
-
         #sb-site,
         .sb-site-container,
         .sb-slidebar,
@@ -1976,7 +1974,7 @@
             width: 45%
         }
 
-        @media (max-width:480px) {
+        @media(max-width:480px) {
             .sb-slidebar {
                 width: 70%
             }
@@ -1988,7 +1986,7 @@
             }
         }
 
-        @media (min-width:481px) {
+        @media(min-width:481px) {
             .sb-slidebar {
                 width: 55%
             }
@@ -2000,7 +1998,7 @@
             }
         }
 
-        @media (min-width:768px) {
+        @media(min-width:768px) {
             .sb-slidebar {
                 width: 40%
             }
@@ -2012,7 +2010,7 @@
             }
         }
 
-        @media (min-width:992px) {
+        @media(min-width:992px) {
             .sb-slidebar {
                 width: 30%
             }
@@ -2024,7 +2022,7 @@
             }
         }
 
-        @media (min-width:1200px) {
+        @media(min-width:1200px) {
             .sb-slidebar {
                 width: 20%
             }
@@ -2086,27 +2084,24 @@
             position: absolute;
             left: -1px;
             top: -1px;
-            background: #FAFAFA;
+            background: #fafafa;
             border: 1px solid #aaa;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px
         }
 
-
         body {
-            text-align: center;
+            text-align: center
         }
 
         .ui-button,
         .ui-button-text .ui-button {
-            font-size: 10px !important;
+            font-size: 10px !important
         }
 
-        /* navi-bar */
-
         #sb-site {
-            background-color: #23262a;
+            background-color: #23262a
         }
 
         .navicon-line {
@@ -2114,23 +2109,23 @@
             height: 4px;
             border-radius: 1px;
             margin-bottom: 3px;
-            background-color: #FFFFFF;
+            background-color: #fff
         }
 
         .top-bar-block {
             display: inline-block;
             color: white;
             font-style: italic;
-            font-family: Georgia, serif;
+            font-family: Georgia, serif
         }
 
         #menubar {
             position: absolute;
-            left: 10px;
+            left: 10px
         }
 
         #menu .ui-selecting {
-            background: #a7e2a7;
+            background: #a7e2a7
         }
 
         #menu .ui-selected {
@@ -2142,7 +2137,7 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            width: 100%;
+            width: 100%
         }
 
         #menu li {
@@ -2154,14 +2149,12 @@
         }
 
         #menupane {
-            width: 120px;
+            width: 120px
         }
 
         #top-bar {
-            background-color: #222;
+            background-color: #222
         }
-
-        /* general */
 
         .setting-category {
             text-align: center;
@@ -2186,11 +2179,11 @@
         }
 
         #about-p {
-            text-align: left;
+            text-align: left
         }
 
         ul {
-            text-align: left;
+            text-align: left
         }
 
         .tmp_unit {
@@ -2198,16 +2191,16 @@
         }
 
         .editbtn {
-            height: 20px;
+            height: 20px
         }
 
         .section {
             font-size: 18px;
-            font-weight: bold;
+            font-weight: bold
         }
 
         table {
-            border-collapse: collapse;
+            border-collapse: collapse
         }
 
         table,
@@ -2220,31 +2213,27 @@
             border: 1px solid black;
         }
 
-        /* automation progress */
-
         #auto-t tr,
         #auto-t td,
         #auto-t th {
-            border: 0px;
+            border: 0;
             font-weight: bold
         }
 
         #auto-p td {
-            text-align: left;
+            text-align: left
         }
 
         .running {
             font-size: 1.2em;
             color: red;
-            background-color: yellow;
+            background-color: yellow
         }
 
         .run {
-            color: #BDBDBD;
-            font-weight: normal;
+            color: #bdbdbd;
+            font-weight: normal
         }
-
-        /* panel */
 
         .panel {
             border: rgb(0, 0, 0) 1px;
@@ -2270,7 +2259,7 @@
             color: #c8c8c8;
             padding: 2px;
             margin: 2px;
-            background-color: #292d31;
+            background-color: #292d31
         }
 
         #timerPanel {
@@ -2281,7 +2270,7 @@
         #timer {
             height: 24px;
             width: 80px;
-            font-size: 12pt;
+            font-size: 12pt
         }
 
 
@@ -2295,28 +2284,24 @@
         }
 
         .tmp_unit {
-            font-family: Tahoma, Geneva, sans-serif;
+            font-family: Tahoma, Geneva, sans-serif
         }
 
         #maintemp hr {
-            margin: 2px;
+            margin: 2px
         }
 
         #maintemp {
-            width: 125px;
+            width: 125px
         }
 
-        #currenttemp {}
-
         #setpoint {
-            color: #33c726;
+            color: #33c726
         }
 
         #auxT {
-            display: none;
+            display: none
         }
-
-        /* pwm */
 
         #pwmPanel {
             height: 40px;
@@ -2327,24 +2312,20 @@
             font-size: 10pt;
             width: 30px;
             height: 22px;
-            display: inline-block;
+            display: inline-block
         }
 
-        /* LED */
-
-        /*.round-led-circle {width: 23px; height:0; padding-bottom: 23px;border-radius: 50%; border-style: outset; overflow:hidden;  display: inline-block;}
-span.round-led { width:12px; height:12px; display: table-cell;  text-align:center; vertical-align:middle; font-weight:bold; text-decoration:none;}	*/
 
         a {
             -webkit-user-select: none;
-            -webkit-touch-callout: none;
+            -webkit-touch-callout: none
         }
 
         #status-p table,
         #status-p tr,
         #status-p td {
-            border: 0px;
-            margin: 0px;
+            border: 0;
+            margin: 0
         }
 
         #ctrlpanel {
@@ -2359,24 +2340,24 @@ span.round-led { width:12px; height:12px; display: table-cell;  text-align:cente
 
         table .ledpanel {
             text-align: center;
-            width: 100%;
+            width: 100%
         }
 
         #btnpanel {
             width: fit-content;
             height: fit-content;
-            position: relative;
+            position: relative
         }
 
         #btnpanel td {
-            width: 25%;
+            width: 25%
         }
 
         #btngap {
-            height: 5px;
+            height: 5px
         }
 
-        .btn-success {
+		.btn-success {
             border-color: black;
             background: -webkit-gradient(linear, left top, left bottom, from(#484e55), to(#313539));
             background: -moz-linear-gradient(top, #484e55, #313539);
@@ -2390,10 +2371,10 @@ span.round-led { width:12px; height:12px; display: table-cell;  text-align:cente
             filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#484e55', EndColorStr='#313539');
         }
 
-        /*#btncover { position:absolute; left:0px; top:0px; width:100%; height:100%; z-index:1000; background-color:#FFF; border-radius:0px 0px 6px 6px; opacity: 0.6;}*/
+
 
         .round-button-circle {
-            color: white;
+           	color: white;
             width: 52px;
             height: 0;
             padding-bottom: 52px;
@@ -2410,10 +2391,10 @@ span.round-led { width:12px; height:12px; display: table-cell;  text-align:cente
             display: table-cell;
             text-align: center;
             vertical-align: middle;
-            color: #CCCCCC;
+            color: #ccc;
             font-weight: bold;
             text-decoration: none;
-            font-size: 8pt;
+            font-size: 8pt
         }
 
         #info {
@@ -2421,7 +2402,7 @@ span.round-led { width:12px; height:12px; display: table-cell;  text-align:cente
             color: white;
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             background-color: black;
-            height: 16px;
+            height: 16px
         }
 
         #title {
@@ -2442,336 +2423,754 @@ span.round-led { width:12px; height:12px; display: table-cell;  text-align:cente
             margin-left: auto;
             margin-right: auto;
             border: 2px;
-            border-style: groove;
+            border-style: groove
         }
 
         #sensors {
-            display: none;
+            display: none
         }
 
         #auxledcon {
-            display: none;
+            display: none
         }
-
-        /* network setup */
 
         #network-p table,
         #network-p tr,
         #network-p td {
-            border: 0px;
+            border: 0
         }
 
         #passmatch {
-            color: red;
+            color: red
         }
 
         #saveok {
             color: blue;
-            font-style: italic;
+            font-style: italic
         }
 
         #savefail {
             color: red;
-            font-weight: bold;
+            font-weight: bold
         }
 
-        /* utility */
-
         fieldset.commonset {
-            display: inline-block;
+            display: inline-block
         }
 
         fieldset {
             margin: 10px;
-            display: inline-block;
+            display: inline-block
         }
 
         fieldset th {
-            text-align: right;
+            text-align: right
         }
 
         fieldset td {
-            text-align: left;
+            text-align: left
         }
 
         .eventaudio {
-            display: none;
+            display: none
         }
     </style>
     <script>
-        
-// strings, for localization
-var STR={
-ChartLabel:"Temperature",
-AddMalt:"Add Malt",
-RemoveMalt:"Remove Malt",
-Boil:"Boil",
-HopN:"Hop#",
-PBHN:"PBH#",
-HopStandSession:"Session",
-Cooling:"Cooling",
-Automation:"Automation",
-PIDAutoTune:"PID AutoTune",
-DelayStart:"Wait to Start Automation",
-PumpRest:"--Pump Rest--",
-Idle:"BrewManiacEx 0.3",
-ManualMode:"Manual Mode",
-Setup:"Setup",
-PaddleLed:"STIR",
-Unknown:"Error!!",
-Pause:"PAUSED",
-min:"min",
-Mash:"Mash Step",
-Connected:"Connected",
-ConnectionError:"Connection Error",
-StartBrew:"Brewing started.",
-BoilEnd:"Boil Finishing",
-EndHopStand:"HopStand Finishing",
-ResumeBrew:"Brew Resumed",
-spargeSensor:"SPG:",
-stageName:["Mash In","Mash Step(1)","Mash Step(2)","Mash Step(3)","Mash Step(4)","Mash Step(5)","Mash Step(6)","Mash Out","Boiling","Cooling","Whirlpool","Chilling","HopStand"],
-errorWrongHopSchedule:"Wrong Hop Schedule.",
-errorMashoutTimeZero:"Mashout time is Zero.",
-errorHopStandSession:"Wrong Hop Stand session setting.",
-errorPostHopSchedule:"Wrong post boil Hop schedule.",
-errorTooManyHop:"Maximum hop number is 10.",
-errorTooManyHopStand:"Maximum hop stand session is 5.",
-errorTooManyPostBoilHop:"Maximum Post Boil Hop is 10.",
-DistillPreheat:"Distilling preheat",
-DistillHead:"Distilling Head",
-DistillHeart:"Distilling Heart",
-DistillTail:"Distilling Tail",
-event:["","Temperature Reached",
-				"Add Malt",	
-				"Remove Malt",	
-				"Iodine Test",	
-				"Pause",
-				"Resume",
-				"Add Hop",
-				"Pwm On",
-				"Pwm Off",
-				"Boil Finished",
-				"Brew Finished!"],
 
-};
+        // strings, for localization
+        var STR = {
+            ChartLabel: "Temperature",
+            AddMalt: "Add Malt",
+            RemoveMalt: "Remove Malt",
+            Boil: "Boil",
+            HopN: "Hop#",
+            PBHN: "PBH#",
+            HopStandSession: "Session",
+            Cooling: "Cooling",
+            Automation: "Automation",
+            PIDAutoTune: "PID AutoTune",
+            DelayStart: "Wait to Start Automation",
+            PumpRest: "--Pump Rest--",
+            Idle: "BrewManiacEx",
+            ManualMode: "Manual Mode",
+            Setup: "Setup",
+            PaddleLed: "STIR",
+            Unknown: "Error!!",
+            Pause: "PAUSED",
+            min: "min",
+            Mash: "Mash Step",
+            Connected: "Connected",
+            ConnectionError: "Connection Error",
+            StartBrew: "Brewing started.",
+            BoilEnd: "Boil Finishing",
+            EndHopStand: "HopStand Finishing",
+            ResumeBrew: "Brew Resumed",
+            spargeSensor: "SPG:",
+            stageName: ["Mash In", "Mash Step(1)", "Mash Step(2)", "Mash Step(3)", "Mash Step(4)", "Mash Step(5)", "Mash Step(6)", "Mash Out", "Boiling", "Cooling", "Whirlpool", "Chilling", "HopStand"],
+            errorWrongHopSchedule: "Wrong Hop Schedule.",
+            errorMashoutTimeZero: "Mashout time is Zero.",
+            errorHopStandSession: "Wrong Hop Stand session setting.",
+            errorPostHopSchedule: "Wrong post boil Hop schedule.",
+            errorTooManyHop: "Maximum hop number is 10.",
+            errorTooManyHopStand: "Maximum hop stand session is 5.",
+            errorTooManyPostBoilHop: "Maximum Post Boil Hop is 10.",
+            DistillPreheat: "Distilling preheat",
+            DistillHead: "Distilling Head",
+            DistillHeart: "Distilling Heart",
+            DistillTail: "Distilling Tail",
+            event: ["", "Temperature Reached",
+                "Add Malt",
+                "Remove Malt",
+                "Iodine Test",
+                "Pause",
+                "Resume",
+                "Add Hop",
+                "Pwm On",
+                "Pwm Off",
+                "Boil Finished",
+                "Brew Finished!"
+            ],
 
-var STR_paddle={
-PumpRest:"--Stir Rest--",
-};
-var Beep= new Audio(
-"data:audio/mp4;base64,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"
-);
+        };
 
-var ButtonLabels={
-0:{u:"",d:"",s:"Quit",e:"Go",i:""},
-1:{u:"",d:"",s:"",e:"Ok",i:""},
-2:{u:"",d:"",s:"Edit",e:"Ok",i:""},
-3:{u:"UP",d:"DOWN",s:">>",e:"",i:""},
-4:{u:"UP",d:"DOWN",s:"Done",e:"",i:""},
-5:{u:"",d:"",s:"No",e:"Yes",i:""},
-6:{u:"",d:"Manual",s:"Auto",e:"Setup",i:""},
-7:{u:"",d:"",s:"",e:"",i:"Pump Rest"},
-8:{u:"",d:"",s:"Yes",e:"Pump",i:"Continue?"},
-9:{u:"",d:"",s:"Yes",e:"No",i:"Continue?"},
-10:{u:"",d:"",s:"",e:"Pump",i:""},
-11:{u:"",d:"",s:"Time",e:"Pump",i:""},
-12:{u:"UP",d:"Down",s:"",e:"Pump",i:""},
-13:{u:"UP",d:"Down",s:"",e:"",i:""},
-14:{u:"",d:"",s:"Exit",e:"",i:""},
-15:{u:"",d:"",s:"Ok",e:"",i:""},
-16:{u:"UP",d:"Down",s:"End",e:"Pump",i:""},
-17:{u:"UP",d:"Down",s:"Heat",e:"Pump",i:""},
-18:{u:"UP",d:"Down",s:"Pause",e:"STP",i:""},
-19:{u:"UP",d:"Down",s:"Pump Pause",e:"STP",i:""},
-20:{u:"UP",d:"Down",s:"Pause",e:"",i:""},
-21:{u:"UP",d:"Down",s:"Skip",e:"Ok",i:""},
-22:{u:"UP",d:"Down",s:"",e:"Ok",i:""},
-23:{u:"UP",d:"Down",s:"Quit",e:"Ok",i:""},
-24:{u:"",d:"Down",s:"Quit",e:"Ok",i:""},
-25:{u:"UP",d:"",s:"Quit",e:"Ok",i:""},
-26:{u:"UP",d:"Down",s:"Pause",e:"Pump",i:""},
-27:{u:"UP",d:"Down",s:"RUN",e:"Pump",i:""},
-28:{u:"UP",d:"Down",s:"Done",e:"More",i:""},
-29:{u:"UP",d:"",s:"",e:"OK",i:""},
-30:{u:"",d:"Down",s:"",e:"OK",i:""},
-31:{u:"",d:"",s:"Exit",e:"Pump",i:""},
-32:{u:"",d:"",s:"No",e:"Yes",i:"Auto Tune PID?"},
-33:{u:"",d:"",s:"No",e:"Yes",i:"Stop AutoTune?"},
-34:{u:"",d:"",s:"",e:"Yes", i:"Run AP Mode?"},
-35:{u:"Extend",d:"",s:"Skip",e:"Back", i:""},
-36:{u:"UP", d:"DWON", s:"Skip", e:"Pump", i:""},
-37:{u:"", d:"", s:"Mash Out", e:"Extend", i:""}
-};
+        var STR_paddle = {
+            PumpRest: "--Stir Rest--",
+        };
+        var Beep = new Audio(
+            "data:audio/mp4;base64,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"
+        );
 
-var ButtonLabels_paddle={
-7:{u:"",d:"",s:"",e:"",i:"Stir Rest"},
-8:{u:"",d:"",s:"Yes",e:"Stir",i:"Continue?"},
-10:{u:"",d:"",s:"",e:"Stir",i:""},
-11:{u:"",d:"",s:"Time",e:"Stir",i:""},
-12:{u:"UP",d:"Down",s:"",e:"Stir",i:""},
-16:{u:"UP",d:"Down",s:"End",e:"Sitr",i:""},
-17:{u:"UP",d:"Down",s:"Heat",e:"Stir",i:""},
-19:{u:"UP",d:"Down",s:"Stir Pause",e:"STP",i:""},
-26:{u:"UP",d:"Down",s:"Pause",e:"Stir",i:""},
-27:{u:"UP",d:"Down",s:"RUN",e:"Stir",i:""},
-31:{u:"",d:"",s:"Exit",e:"Stir",i:""},
-36:{u:"UP", d:"DWON", s:"Skip", e:"Stir", i:""},
-37:{u:"", d:"", s:"MashOut", e:"Extend", i:""},
-38:{u:"", d:"Manual", s:"Auto", e:"Cancel", i:""}
-};
+        var ButtonLabels = {
+            0: {
+                u: "",
+                d: "",
+                s: "Quit",
+                e: "Go",
+                i: ""
+            },
+            1: {
+                u: "",
+                d: "",
+                s: "",
+                e: "Ok",
+                i: ""
+            },
+            2: {
+                u: "",
+                d: "",
+                s: "Edit",
+                e: "Ok",
+                i: ""
+            },
+            3: {
+                u: "UP",
+                d: "DOWN",
+                s: ">>",
+                e: "",
+                i: ""
+            },
+            4: {
+                u: "UP",
+                d: "DOWN",
+                s: "Done",
+                e: "",
+                i: ""
+            },
+            5: {
+                u: "",
+                d: "",
+                s: "No",
+                e: "Yes",
+                i: ""
+            },
+            6: {
+                u: "",
+                d: "Manual",
+                s: "Auto",
+                e: "Setup",
+                i: ""
+            },
+            7: {
+                u: "",
+                d: "",
+                s: "",
+                e: "",
+                i: "Pump Rest"
+            },
+            8: {
+                u: "",
+                d: "",
+                s: "Yes",
+                e: "Pump",
+                i: "Continue?"
+            },
+            9: {
+                u: "",
+                d: "",
+                s: "Yes",
+                e: "No",
+                i: "Continue?"
+            },
+            10: {
+                u: "",
+                d: "",
+                s: "",
+                e: "Pump",
+                i: ""
+            },
+            11: {
+                u: "",
+                d: "",
+                s: "Time",
+                e: "Pump",
+                i: ""
+            },
+            12: {
+                u: "UP",
+                d: "Down",
+                s: "",
+                e: "Pump",
+                i: ""
+            },
+            13: {
+                u: "UP",
+                d: "Down",
+                s: "",
+                e: "",
+                i: ""
+            },
+            14: {
+                u: "",
+                d: "",
+                s: "Exit",
+                e: "",
+                i: ""
+            },
+            15: {
+                u: "",
+                d: "",
+                s: "Ok",
+                e: "",
+                i: ""
+            },
+            16: {
+                u: "UP",
+                d: "Down",
+                s: "End",
+                e: "Pump",
+                i: ""
+            },
+            17: {
+                u: "UP",
+                d: "Down",
+                s: "Heat",
+                e: "Pump",
+                i: ""
+            },
+            18: {
+                u: "UP",
+                d: "Down",
+                s: "Pause",
+                e: "STP",
+                i: ""
+            },
+            19: {
+                u: "UP",
+                d: "Down",
+                s: "Pump Pause",
+                e: "STP",
+                i: ""
+            },
+            20: {
+                u: "UP",
+                d: "Down",
+                s: "Pause",
+                e: "",
+                i: ""
+            },
+            21: {
+                u: "UP",
+                d: "Down",
+                s: "Skip",
+                e: "Ok",
+                i: ""
+            },
+            22: {
+                u: "UP",
+                d: "Down",
+                s: "",
+                e: "Ok",
+                i: ""
+            },
+            23: {
+                u: "UP",
+                d: "Down",
+                s: "Quit",
+                e: "Ok",
+                i: ""
+            },
+            24: {
+                u: "",
+                d: "Down",
+                s: "Quit",
+                e: "Ok",
+                i: ""
+            },
+            25: {
+                u: "UP",
+                d: "",
+                s: "Quit",
+                e: "Ok",
+                i: ""
+            },
+            26: {
+                u: "UP",
+                d: "Down",
+                s: "Pause",
+                e: "Pump",
+                i: ""
+            },
+            27: {
+                u: "UP",
+                d: "Down",
+                s: "RUN",
+                e: "Pump",
+                i: ""
+            },
+            28: {
+                u: "UP",
+                d: "Down",
+                s: "Done",
+                e: "More",
+                i: ""
+            },
+            29: {
+                u: "UP",
+                d: "",
+                s: "",
+                e: "OK",
+                i: ""
+            },
+            30: {
+                u: "",
+                d: "Down",
+                s: "",
+                e: "OK",
+                i: ""
+            },
+            31: {
+                u: "",
+                d: "",
+                s: "Exit",
+                e: "Pump",
+                i: ""
+            },
+            32: {
+                u: "",
+                d: "",
+                s: "No",
+                e: "Yes",
+                i: "Auto Tune PID?"
+            },
+            33: {
+                u: "",
+                d: "",
+                s: "No",
+                e: "Yes",
+                i: "Stop AutoTune?"
+            },
+            34: {
+                u: "",
+                d: "",
+                s: "",
+                e: "Yes",
+                i: "Run AP Mode?"
+            },
+            35: {
+                u: "Extend",
+                d: "",
+                s: "Skip",
+                e: "Back",
+                i: ""
+            },
+            36: {
+                u: "UP",
+                d: "DWON",
+                s: "Skip",
+                e: "Pump",
+                i: ""
+            },
+            37: {
+                u: "",
+                d: "",
+                s: "Mash Out",
+                e: "Extend",
+                i: ""
+            },
+            38: {
+                u: "",
+                d: "Manual",
+                s: "Auto",
+                e: "Cancel",
+                i: ""
+            }
+        };
+        var ButtonLabels_paddle = {
+            7: {
+                u: "",
+                d: "",
+                s: "",
+                e: "",
+                i: "Stir Rest"
+            },
+            8: {
+                u: "",
+                d: "",
+                s: "Yes",
+                e: "Stir",
+                i: "Continue?"
+            },
+            10: {
+                u: "",
+                d: "",
+                s: "",
+                e: "Stir",
+                i: ""
+            },
+            11: {
+                u: "",
+                d: "",
+                s: "Time",
+                e: "Stir",
+                i: ""
+            },
+            12: {
+                u: "UP",
+                d: "Down",
+                s: "",
+                e: "Stir",
+                i: ""
+            },
+            16: {
+                u: "UP",
+                d: "Down",
+                s: "End",
+                e: "Sitr",
+                i: ""
+            },
+            17: {
+                u: "UP",
+                d: "Down",
+                s: "Heat",
+                e: "Stir",
+                i: ""
+            },
+            19: {
+                u: "UP",
+                d: "Down",
+                s: "Stir Pause",
+                e: "STP",
+                i: ""
+            },
+            26: {
+                u: "UP",
+                d: "Down",
+                s: "Pause",
+                e: "Stir",
+                i: ""
+            },
+            27: {
+                u: "UP",
+                d: "Down",
+                s: "RUN",
+                e: "Stir",
+                i: ""
+            },
+            31: {
+                u: "",
+                d: "",
+                s: "Exit",
+                e: "Stir",
+                i: ""
+            },
+            36: {
+                u: "UP",
+                d: "DWON",
+                s: "Skip",
+                e: "Stir",
+                i: ""
+            },
+            37: {
+                u: "",
+                d: "",
+                s: "MashOut",
+                e: "Extend",
+                i: ""
+            }
+        };
 
-var ButtonLabels_distill={
-6:{u:"Distill",d:"Manual",s:"Auto",e:"Setup",i:""}
-};
 
-$(function(){
-	$(".fn").hide();
-	var mySlidebars = new $.slidebars();
-	window.menuselected={};
-	$("#menu").selectable({
-		element: null,	
-		callback:{},
-		selected:function(event,ui){
-			element = $(ui.selected);
-			if(typeof window.menuselected[ui.selected.id] != "undefined")
-				window.menuselected[ui.selected.id]();
-		},
-		stop: function(event, ui) {
-        	element.siblings().removeClass("selected");
-        	$(".fn").hide();
-        	$('#' + element[0].id + '-p').show();    
-			$("#menupane").hide('slide');
-      	}});
-    $("#status").addClass('ui-selected');
-	$("#menupane").hide();	
-	$("#status-p").show();
 
-	BM.init();
-	BChart.init("chart-canvas");
-	NetworkConfig.init();
-	Logs.init();
-	BrewUtils.init("#utility-p");
-	Recipes.init();
-	Sound.init();
-	
-	// create customized alert and confirm
-	$("#dialog-confirm").hide();
-	$("#dialog-alert").hide();
-	
-	// test 
-//	$("#soundid").selectmenu();
-	$("#playsound").button().click( function( event ) {
-        event.preventDefault();
-        Sound.play($( "select#soundid option:checked" ).val());
-    });
-});
-	var jAlert=function(msg){
-		$( "#dialog-alert .dialog-msg" ).text(msg);
-		 $( "#dialog-alert" ).dialog({
-      		modal: true,
-		      buttons: { Ok: function() {$( this ).dialog( "close" );}}
-		      });
-	};
-	var jConfirm=function(opt){
-		$( "#dialog-confirm .dialog-msg" ).text(opt.msg);
-		if(typeof opt["title"] != "undefined") $( "#dialog-confirm").prop("title",opt.title);
-		var btnok=(typeof opt["ok"] != "undefined")? opt["ok"]:"OK";
-		var btncancel=(typeof opt["cancel"] != "undefined")? opt["cancel"]:"Cancel";
-		
-		$( "#dialog-confirm" ).dialog({
-      		resizable: false,
-      		height: "auto",
-      		width: 400,
-      		modal: true
-    	}).dialog("option","buttons",
-    	[ { text: btnok,
-	        click: function() {
-    		     if(typeof opt["onok"] != "undefined") opt.onok(this);
-    		     $( this ).dialog( "close" );
-     			}
-      		},
-      		{ text: btncancel,
-	        click: function() {
-    		     if(typeof opt["oncancel"] != "undefined") opt.oncancel(this);
-    		     $( this ).dialog( "close" );
-     			}
-      		}
-		]);
-    };
 
-</script>
-<style>
-#recipe-list-panel { float:left; width:200px;}
-#recipe-list .ui-selecting { background: #FECA40; }
-#recipe-list .ui-selected { background: #4d8ba7; color: white; }
-#recipe-list { list-style-type: none; margin: 0; padding: 0; width: 100%; }
-#recipe-list li { margin: 3px; padding: 0.2em; font-size: 1em; height: 18px; }
-#xml-recipe { border-collapse:collapse; width:600px;}
-#xml-recipe table, #xml-recipe tr, #xml-recipe th,#xml-recipe td {border:1px black solid;}
-#xml-recipe table.subcat { width:100%; border-collapse:collapse;}
-.RA {text-align: right;}
-#recipe-options-panel table {text-align: left;}
-#xml-recipe th {background-color: lightgray;
-    font-weight:bold;}
-#xml-recipe .auto_value { color:red;}
-.recipe-note {text-align:left;}
-.color-block { width: 18px; height:0; padding-bottom: 18px; border-radius: 50%;  overflow:hidden; display:inline-block;}
-#rssi {position:relative; float:right; margin: 0px 16px 0px 0px; height: 24px; width: 24px;}
-.rssi-bar {position:absolute; bottom:0; float:left; width: 4px; border-radius: 1px; background-color: #FFFFFF;}
-.rssi-bar1 {height: 4px; left:0px;}
-.rssi-bar2 {height: 12px; left:6px;}
-.rssi-bar3 {height: 18px; left:12px;}
-.rssi-bar4 {height: 24px; left:18px;}
-</style>
+
+
+
+
+        var ButtonLabels_distill = {
+            6: {
+                u: "Distill",
+                d: "Manual",
+                s: "Auto",
+                e: "Setup",
+                i: ""
+            }
+        };
+
+        $(function() {
+            $(".fn").hide();
+            var c = new $.slidebars();
+            window.menuselected = {};
+            $("#menu").selectable({
+                element: null,
+                callback: {},
+                selected: function(a, b) {
+                    element = $(b.selected);
+                    if (typeof window.menuselected[b.selected.id] != "undefined") window.menuselected[b.selected.id]()
+                },
+                stop: function(a, b) {
+                    element.siblings().removeClass("selected");
+                    $(".fn").hide();
+                    $('#' + element[0].id + '-p').show();
+                    $("#menupane").hide('slide')
+                }
+            });
+
+            $("#status").addClass('ui-selected');
+            $("#menupane").hide();
+            $("#status-p").show();
+
+            BM.init();
+            BChart.init("chart-canvas");
+            NetworkConfig.init();
+            Logs.init();
+            BrewUtils.init("#utility-p");
+            Recipes.init();
+            Sound.init();
+
+
+            $("#dialog-confirm").hide();
+            $("#dialog-alert").hide();
+
+
+
+            $("#playsound").button().click(function(a) {
+                a.preventDefault();
+                Sound.play($("select#soundid option:checked").val())
+            })
+        });
+        var jAlert = function(a) {
+            $("#dialog-alert .dialog-msg").text(a);
+            $("#dialog-alert").dialog({
+                modal: true,
+                buttons: {
+                    Ok: function() {
+                        $(this).dialog("close")
+                    }
+                }
+            })
+        };
+        var jConfirm = function(a) {
+            $("#dialog-confirm .dialog-msg").text(a.msg);
+            if (typeof a["title"] != "undefined") $("#dialog-confirm").prop("title", a.title);
+            var b = (typeof a["ok"] != "undefined") ? a["ok"] : "OK";
+            var c = (typeof a["cancel"] != "undefined") ? a["cancel"] : "Cancel";
+            
+			$("#dialog-confirm").dialog({
+                resizable: false,
+                height: "auto",
+                width: 400,
+                modal: true
+            }).dialog("option", "buttons", [{
+                text: b,
+                click: function() {
+                    if (typeof a["onok"] != "undefined") a.onok(this);
+                    $(this).dialog("close")
+                }
+            }, 
+{
+                text: c,
+                click: function() {
+                    if (typeof a["oncancel"] != "undefined") a.oncancel(this);
+                    $(this).dialog("close")
+                }
+            }])
+        };
+
+    </script>
+    <style>
+        #recipe-list-panel {
+            float: left;
+            width: 200px
+        }
+
+        #recipe-list .ui-selecting {
+            background: #feca40
+        }
+
+        #recipe-list .ui-selected {
+            background: #4d8ba7;
+            color: white
+        }
+
+        #recipe-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%
+        }
+
+        #recipe-list li {
+            margin: 3px;
+            padding: .2em;
+            font-size: 1em;
+            height: 18px
+        }
+
+        #xml-recipe {
+            border-collapse: collapse;
+            width: 600px
+        }
+
+        #xml-recipe table,
+        #xml-recipe tr,
+        #xml-recipe th,
+        #xml-recipe td {
+            border: 1px black solid
+        }
+
+        #xml-recipe table.subcat {
+            width: 100%;
+            border-collapse: collapse
+        }
+
+        .RA {
+            text-align: right
+        }
+
+        #recipe-options-panel table {
+            text-align: left
+        }
+
+        #xml-recipe th {
+            background-color: lightgray;
+            font-weight: bold
+        }
+
+        #xml-recipe .auto_value {
+            color: red
+        }
+
+        .recipe-note {
+            text-align: left
+        }
+
+        .color-block {
+            width: 18px;
+            height: 0;
+            padding-bottom: 18px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: inline-block
+        }
+
+        #rssi {
+            position: relative;
+            float: right;
+            margin: 0 16px 0 0;
+            height: 24px;
+            width: 24px
+        }
+
+        .rssi-bar {
+            position: absolute;
+            bottom: 0;
+            float: left;
+            width: 4px;
+            border-radius: 1px;
+            background-color: #fff
+        }
+
+        .rssi-bar1 {
+            height: 4px;
+            left: 0
+        }
+
+        .rssi-bar2 {
+            height: 12px;
+            left: 6px
+        }
+
+        .rssi-bar3 {
+            height: 18px;
+            left: 12px
+        }
+
+        .rssi-bar4 {
+            height: 24px;
+            left: 18px
+        }
+
+        #audioplay {
+            position: relative;
+            float: right;
+            margin: 0 16px 0 0;
+            height: 24px;
+            width: 24px
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- slide bar  -->
-
-    <div class="sb-slidebar sb-left sb-width-custom" data-sb-width="160px">
-        <ol id="menu">
-            <li class="ui-widget-content" id="status">Panel</li>
-            <li class="ui-widget-content" id="settings">Settings</li>
-            <li class="ui-widget-content" id="automation">Automation</li>
-            <li class="ui-widget-content" id="recipes">Recipes</li>
-            <li class="ui-widget-content" id="brewlog">Brew Logs</li>
-            <li class="ui-widget-content" id="network">Network</li>
-            <li class="ui-widget-content" id="utility">Calculators</li>
-            <li class="ui-widget-content" id="about">About</li>
+    <div class="sb-slidebar sb-left sb-width-custom" data-sb-width=160px>
+        <ol id=menu>
+            <li class=ui-widget-content id=status>Panel</li>
+            <li class=ui-widget-content id=settings>Settings</li>
+            <li class=ui-widget-content id=automation>Automation</li>
+            <li class=ui-widget-content id=recipes>Recipes</li>
+            <li class=ui-widget-content id=brewlog>Brew Logs</li>
+            <li class=ui-widget-content id=network>Network</li>
+            <li class=ui-widget-content id=utility>Calculators</li>
+            <li class=ui-widget-content id=about>About</li>
         </ol>
     </div>
-
-    <div id="sb-site">
-        <div id="top-bar">
-            <div class="sb-toggle-left top-bar-block" id="menubar">
-                <div class="navicon-line"></div>
-                <div class="navicon-line"></div>
-                <div class="navicon-line"></div>
+    <div id=sb-site>
+        <div id=top-bar>
+            <div class="sb-toggle-left top-bar-block" id=menubar>
+                <div class=navicon-line></div>
+                <div class=navicon-line></div>
+                <div class=navicon-line></div>
             </div>
-            <div class="top-bar-block"> BrewManiacEx</div>
-            <div id="rssi">
+            <div class=top-bar-block> BrewManiacEx</div>
+            <div id=rssi>
                 <div class="rssi-bar rssi-bar1"></div>
                 <div class="rssi-bar rssi-bar2"></div>
                 <div class="rssi-bar rssi-bar3"></div>
                 <div class="rssi-bar rssi-bar4"></div>
             </div>
+            <div id=audioplay> <button>?</button></div>
         </div>
-
-
-        <!-- MainScreren Panel  -->
-        <div class="fn" id="status-p">
+        <div class=fn id=status-p>
             <div id="ctrlpanel" class="container">
                 <table>
                     <tr>
-                        <td colspan="2">
-                            <div id="title">BrewManiacEx 0.3</div>
-                            <hr id="tline">
+                        <td colspan=2>
+                            <div id=title>BrewManiacEx 0.4</div>
+                            <hr id=tline>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <table class="ledpanel">
+                        <td colspan=2>
+                            <table class=ledpanel>
                                 <tbody>
                                     <tr>
                                         <td class="leds">
@@ -2801,30 +3200,30 @@ $(function(){
                             </div>
                         </td>
                         <td>
-                            <div id="pwmPanel" class="panel">
-                                <span class="label">PWM</span>
-                                <span id="pwm" class="NUM">99</span>
-                                <span class="label">%</span>
+                            <div id=pwmPanel class=panel>
+                                <span class=label>PWM</span>
+                                <span id=pwm class=NUM>99</span>
+                                <span class=label>%</span>
                             </div>
                         </td>
 
                     </tr>
                     <tr>
                         <td>
-                            <div id="timerPanel" class="panel">
-                                    <span class="label"><i class="fa fa-clock-o" style="font-size:18px"></i></span>
+                            <div id=timerPanel class=panel>
+								<span class="label"><i class="fa fa-clock-o" style="font-size:18px"></i></span>
                                 <span id="timer" class="NUM">01:59:38</span>
                             </div>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <div id="info" class="panel"></div>
+                        <td colspan=2>
+                            <div id=info class=panel></div>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <div id="btnpanel">
+                        <td colspan=2>
+                            <div id=btnpanel>
                                 <table>
                                     <tr>
                                         <td id="btngap" colspan="4"></td>
@@ -2844,305 +3243,305 @@ $(function(){
                                         </td>
                                     </tr>
                                 </table>
-                                <div id="btncover"></div>
+                                <div id=btncover></div>
                             </div>
                         </td>
                     </tr>
                 </table>
             </div>
 
-            <div id="auto-p">
-                <table id="auto-t">
+            <div id=auto-p>
+                <table id=auto-t>
                     <thead>
                         <tr>
-                            <th colspan="3">Automation Progress</th>
+                            <th colspan=3>Automation Progress</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="autot-row">
-                            <td class="autot-title"></td>
-                            <td class="autot-temp"></td>
-                            <td class="autot-time"></td>
+                        <tr class=autot-row>
+                            <td class=autot-title></td>
+                            <td class=autot-temp></td>
+                            <td class=autot-time></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             </p>
 
-            <div id="tchart" style="width:95%;">
-                <canvas id="chart-canvas"></canvas>
+            <div id=tchart style=width:95%>
+                <canvas id=chart-canvas></canvas>
             </div>
         </div>
 
-        <!-- Setting  -->
 
-        <div class="fn" id="settings-p">
-            <span class="section">Settings</span>
+
+        <div class=fn id=settings-p>
+            <span class=section>Settings</span>
             <button id="esetting" type="button" class="btn btn-secondary" style="width: 44px; height: 44px;">Set <i class="ui-icon-pencil;" style="font-size:24px;"></i></button>
-            <button id="savesetting" class="editbtn">Save</button>
-            <button id="exportsetting" class="editbtn">Export</button>
-            <button id="importsetting" class="editbtn">Import</button>
+            <button id=savesetting class=editbtn>Save</button>
+            <button id=exportsetting class=editbtn>Export</button>
+            <button id=importsetting class=editbtn>Import</button>
             <table>
                 <tr>
-                    <td colspan="2" class="setting-category">PID — PWM</td>
+                    <td colspan=2 class=setting-category>PID — PWM</td>
                 </tr>
                 <tr>
-                    <td>kP<span class="dualheating"> primary heater</span> </td>
-                    <td><span id="s_kp">-</span> </td>
+                    <td>kP<span class=dualheating> primary heater</span> </td>
+                    <td><span id=s_kp>-</span> </td>
                 </tr>
                 <tr>
-                    <td>kI<span class="dualheating"> primary heater</span> </td>
-                    <td><span id="s_ki">-</span> </td>
+                    <td>kI<span class=dualheating> primary heater</span> </td>
+                    <td><span id=s_ki>-</span> </td>
                 </tr>
                 <tr>
-                    <td>kD<span class="dualheating"> primary heater</span> </td>
-                    <td><span id="s_kd">-</span> </td>
+                    <td>kD<span class=dualheating> primary heater</span> </td>
+                    <td><span id=s_kd>-</span> </td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>kP secondary heater </td>
-                    <td><span id="s_kp2">-</span> </td>
+                    <td><span id=s_kp2>-</span> </td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>kI secondary heater </td>
-                    <td><span id="s_ki2">-</span> </td>
+                    <td><span id=s_ki2>-</span> </td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>kD secondary heater</td>
-                    <td><span id="s_kd2">-</span> </td>
+                    <td><span id=s_kd2>-</span> </td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>kP both Elements </td>
-                    <td><span id="s_kpall">-</span> </td>
+                    <td><span id=s_kpall>-</span> </td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>kI both Elements </td>
-                    <td><span id="s_kiall">-</span> </td>
+                    <td><span id=s_kiall>-</span> </td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>kD both Elements</td>
-                    <td><span id="s_kdall">-</span> </td>
+                    <td><span id=s_kdall>-</span> </td>
                 </tr>
 
                 <tr>
                     <td>Sample Time </td>
-                    <td><span id="s_sample_time">-</span> </td>
+                    <td><span id=s_sample_time>-</span> </td>
                 </tr>
                 <tr>
                     <td>WindowSet </td>
-                    <td><span id="s_window">-</span> ms</td>
+                    <td><span id=s_window>-</span> ms</td>
                 </tr>
                 <tr>
                     <td>Heat/PWM in Boil </td>
-                    <td><span id="s_pwm">-</span> %</td>
+                    <td><span id=s_pwm>-</span> %</td>
                 </tr>
                 <tr>
-                    <td class="TCAL_T">Sensor Calibration </td>
-                    <td><span id="s_cal" class="TCAL_V">-</span><span class="tmp_unit">&deg;C</span></td>
+                    <td class=TCAL_T>Sensor Calibration </td>
+                    <td><span id=s_cal class=TCAL_V>-</span><span class=tmp_unit>&deg;C</span></td>
                 </tr>
                 <tr>
                     <td>PID Start</td>
-                    <td><span id="s_pidstart">-</span> <span class="tmp_unit">&deg;C</span></td>
+                    <td><span id=s_pidstart>-</span> <span class=tmp_unit>&deg;C</span></td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="setting-category">Unit Parameters</td>
+                    <td colspan=2 class=setting-category>Unit Parameters</td>
                 </tr>
                 <tr>
                     <td>Temperature Unit</td>
-                    <td><span id="s_unit" class="tmp_unit">&deg;C</span></td>
+                    <td><span id=s_unit class=tmp_unit>&deg;C</span></td>
                 </tr>
                 <tr>
                     <td>Boil Temperature</td>
-                    <td><span id="s_boil">-</span> <span class="tmp_unit">&deg;C</span></td>
+                    <td><span id=s_boil>-</span> <span class=tmp_unit>&deg;C</span></td>
                 </tr>
                 <tr>
                     <td>Pump Cycle </td>
-                    <td><span id="s_pumpcycle">-</span> minutes</td>
+                    <td><span id=s_pumpcycle>-</span> minutes</td>
                 </tr>
                 <tr>
                     <td>Pump Rest </td>
-                    <td><span id="s_pumprest">-</span> minutes</td>
+                    <td><span id=s_pumprest>-</span> minutes</td>
                 </tr>
                 <tr>
                     <td>Pump PreMash </td>
-                    <td><span class="onoff" id="s_pumppremash">-</span></td>
+                    <td><span class=onoff id=s_pumppremash>-</span></td>
                 </tr>
                 <tr>
                     <td>Pump on Mash </td>
-                    <td><span class="onoff" id="s_pumpmash">-</span></td>
+                    <td><span class=onoff id=s_pumpmash>-</span></td>
                 </tr>
                 <tr>
                     <td>Pump MashOut </td>
-                    <td><span class="onoff" id="s_pumpmashout">-</span> </td>
+                    <td><span class=onoff id=s_pumpmashout>-</span> </td>
                 </tr>
                 <tr>
                     <td>Pump on Boil </td>
-                    <td><span class="onoff" id="s_pumpboil">-</span></td>
+                    <td><span class=onoff id=s_pumpboil>-</span></td>
                 </tr>
                 <tr>
                     <td>Pump Stop Temperature</td>
-                    <td><span id="s_pumpstop">-</span><span class="tmp_unit">&deg;C</span></td>
+                    <td><span id=s_pumpstop>-</span><span class=tmp_unit>&deg;C</span></td>
                 </tr>
                 <tr>
                     <td>PID when Doughing-In</td>
-                    <td><span id="s_piddoughin">-</span></td>
+                    <td><span id=s_piddoughin>-</span></td>
                 </tr>
                 <tr>
                     <td>PID when Remove Malt </td>
-                    <td><span id="s_pipe">-</span></td>
+                    <td><span id=s_pipe>-</span></td>
                 </tr>
                 <tr>
                     <td>Skip Add </td>
-                    <td><span class="yesno" id="s_skipadd">-</span></td>
+                    <td><span class=yesno id=s_skipadd>-</span></td>
                 </tr>
                 <tr>
                     <td>Skip Remove </td>
-                    <td><span class="yesno" id="s_skipremove">-</span></td>
+                    <td><span class=yesno id=s_skipremove>-</span></td>
                 </tr>
                 <tr>
                     <td>Skip Iodine </td>
-                    <td><span class="yesno" id="s_skipiodine">-</span></td>
+                    <td><span class=yesno id=s_skipiodine>-</span></td>
                 </tr>
                 <tr>
                     <td>Iodine Time </td>
-                    <td><span id="s_iodine">-</span></td>
+                    <td><span id=s_iodine>-</span></td>
                 </tr>
                 <tr>
                     <td>Whirlpool</td>
-                    <td><span id="s_whirlpool">-</span></td>
+                    <td><span id=s_whirlpool>-</span></td>
                 </tr>
                 <tr>
-                    <td colspan="2" class="setting-category">Misc Settings</td>
+                    <td colspan=2 class=setting-category>Misc Settings</td>
                 </tr>
                 <tr>
                     <td>Disable Delay Start</td>
-                    <td><span id="s_nodelay">-</span></td>
+                    <td><span id=s_nodelay>-</span></td>
                 </tr>
                 <tr>
                     <td>Buzz On Button</td>
-                    <td><span id="s_btnbuzz">-</span></td>
+                    <td><span id=s_btnbuzz>-</span></td>
                 </tr>
                 <tr>
                     <td>Pump Prime Cycle</td>
-                    <td><span id="s_pprime">-</span></td>
+                    <td><span id=s_pprime>-</span></td>
                 </tr>
                 <tr>
                     <td>Pump Prime On Time</td>
-                    <td><span id="s_ppon">-</span>ms</td>
+                    <td><span id=s_ppon>-</span>ms</td>
                 </tr>
                 <tr>
                     <td>Pump Prime Off Time</td>
-                    <td><span id="s_ppoff">-</span>ms</td>
+                    <td><span id=s_ppoff>-</span>ms</td>
                 </tr>
-                <tr class="spargeheating">
-                    <td colspan="2" class="setting-subcategory">Sparge Water Heating Control</td>
+                <tr class=spargeheating>
+                    <td colspan=2 class=setting-subcategory>Sparge Water Heating Control</td>
                 </tr>
-                <tr class="spargeheating">
+                <tr class=spargeheating>
                     <td>Control Sparge Heating</td>
-                    <td><span id="s_spenable">-</span></td>
+                    <td><span id=s_spenable>-</span></td>
                 </tr>
-                <tr class="spargeheating">
+                <tr class=spargeheating>
                     <td>Temperature Control</td>
-                    <td><span id="s_sptempctrl">-</span></td>
+                    <td><span id=s_sptempctrl>-</span></td>
                 </tr>
-                <tr class="spargeheating">
+                <tr class=spargeheating>
                     <td>Sensor Index</td>
-                    <td><span id="s_spsensor">-</span></td>
+                    <td><span id=s_spsensor>-</span></td>
                 </tr>
-                <tr class="spargeheating">
+                <tr class=spargeheating>
                     <td>Target Temperature</td>
-                    <td><span id="s_sptemp">-</span><span class="tmp_unit">&deg;C</span></td>
+                    <td><span id=s_sptemp>-</span><span class=tmp_unit>&deg;C</span></td>
                 </tr>
-                <tr class="spargeheating">
+                <tr class=spargeheating>
                     <td>Temp. Difference</td>
-                    <td><span id="s_spdiff">-</span></td>
+                    <td><span id=s_spdiff>-</span></td>
                 </tr>
-                <tr class="dualheating">
-                    <td colspan="2" class="setting-subcategory">Heating Element Usage</td>
+                <tr class=dualheating>
+                    <td colspan=2 class=setting-subcategory>Heating Element Usage</td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>PreMash Heating Element</td>
-                    <td><span id="s_preheat">-</span></td>
+                    <td><span id=s_preheat>-</span></td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>Mashing Heating Element</td>
-                    <td><span id="s_mashheat">-</span></td>
+                    <td><span id=s_mashheat>-</span></td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>Boiling Heating Element</td>
-                    <td><span id="s_boilheat">-</span></td>
+                    <td><span id=s_boilheat>-</span></td>
                 </tr>
-                <tr class="dualheating">
+                <tr class=dualheating>
                     <td>Post Boil Heating Element</td>
-                    <td><span id="s_pbheat">-</span></td>
+                    <td><span id=s_pbheat>-</span></td>
                 </tr>
             </table>
 
-            <!-- Sensors  -->
 
-            <div id="multisensor">
+
+            <div id=multisensor>
                 <h3>Temperature Sensors</h3>
                 <table>
-                    <tr class="setting-category">
+                    <tr class=setting-category>
                         <th>#</th>
                         <th>Address</th>
                     </tr>
-                    <tr class="sensor_row">
-                        <td class="sensor_id">1</td>
-                        <td class="sensor_addr">0xFFFFFFFFFFFFFFFF</td>
+                    <tr class=sensor_row>
+                        <td class=sensor_id>1</td>
+                        <td class=sensor_addr>0xFFFFFFFFFFFFFFFF</td>
                     </tr>
                 </table>
                 <br> Sensor Assignment:
                 <table>
-                    <tr class="setting-category">
+                    <tr class=setting-category>
                         <th>Stage</th>
                         <th>Primary</th>
                         <th>Auxiliary</th>
                     </tr>
                     <tr>
                         <td>Main Screen</td>
-                        <td id="sensor_P_0">1</td>
-                        <td id="sensor_S_0">1</td>
+                        <td id=sensor_P_0>1</td>
+                        <td id=sensor_S_0>1</td>
                     </tr>
                     <tr>
                         <td>Manual Mode</td>
-                        <td id="sensor_P_1">1</td>
-                        <td id="sensor_S_1">1</td>
+                        <td id=sensor_P_1>1</td>
+                        <td id=sensor_S_1>1</td>
                     </tr>
                     <tr>
                         <td>Pre-Mash</td>
-                        <td id="sensor_P_2">1</td>
-                        <td id="sensor_S_2">1</td>
+                        <td id=sensor_P_2>1</td>
+                        <td id=sensor_S_2>1</td>
                     </tr>
                     <tr>
                         <td>Mashing</td>
-                        <td id="sensor_P_3">1</td>
-                        <td id="sensor_S_3">1</td>
+                        <td id=sensor_P_3>1</td>
+                        <td id=sensor_S_3>1</td>
                     </tr>
                     <tr>
                         <td>Boil</td>
-                        <td id="sensor_P_4">1</td>
-                        <td id="sensor_S_4">1</td>
+                        <td id=sensor_P_4>1</td>
+                        <td id=sensor_S_4>1</td>
                     </tr>
                     <tr>
                         <td>Cooling</td>
-                        <td id="sensor_P_5">1</td>
-                        <td id="sensor_S_5">1</td>
+                        <td id=sensor_P_5>1</td>
+                        <td id=sensor_S_5>1</td>
                     </tr>
                 </table>
             </div>
-            <!-- div id="multisensor" -->
+
 
         </div>
-        <!-- Setting  -->
 
-        <!-- Automation  -->
-        <div class="fn" id="automation-p">
+
+
+        <div class=fn id=automation-p>
             <em>Automation</em>
-            <button id="editauto" class="editbtn">Edit</button>
-            <button id="saveauto" class="editbtn">Save</button>
-            <table id="auto_table">
+            <button id=editauto class=editbtn>Edit</button>
+            <button id=saveauto class=editbtn>Save</button>
+            <table id=auto_table>
                 <tr>
-                    <td colspan="3" class="setting-category">Mash Schedule <button id="addrest" class="editbtn">Add Mash Rest</button></td>
+                    <td colspan=3 class=setting-category>Mash Schedule <button id=addrest class=editbtn>Add Mash Rest</button></td>
                 </tr>
                 <tr>
                     <th> Rest</th>
@@ -3151,162 +3550,162 @@ $(function(){
                 </tr>
                 <tr>
                     <td> Mash In </td>
-                    <td><span id="s0_tp">-</span><span class="tmp_unit">&deg;C</span></td>
+                    <td><span id=s0_tp>-</span><span class=tmp_unit>&deg;C</span></td>
                     <td>-</td>
                 </tr>
                 <tr>
                     <td> Mash Out </td>
-                    <td><span id="s7_tp">-</span><span class="tmp_unit">&deg;C</span></td>
-                    <td><span id="s7_tm">-</span> min</td>
+                    <td><span id=s7_tp>-</span><span class=tmp_unit>&deg;C</span></td>
+                    <td><span id=s7_tm>-</span> min</td>
                 </tr>
                 <tr>
                     <tr>
-                        <td colspan="3" class="setting-category">Boil & Hop <button id="addhop" class="editbtn">Add Hop</button></td>
+                        <td colspan=3 class=setting-category>Boil & Hop <button id=addhop class=editbtn>Add Hop</button></td>
                     </tr>
                     <tr>
                         <td> Boil Time</td>
-                        <td colspan="2"><span id="boiltime">-</span> min</td>
+                        <td colspan=2><span id=boiltime>-</span> min</td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="setting-category">Hop Stand <button id="addhopstand" class="editbtn">Add Session</button></td>
+                        <td colspan=3 class=setting-category>Hop Stand <button id=addhopstand class=editbtn>Add Session</button></td>
                     </tr>
                     <tr>
-                        <td>Session <span class="session-number">1</span></td>
-                        <td>start: <span class="session-start-temp">99</span><span class="tmp_unit">&deg;C</span></td>
-                        <td>keep:<span class="session-hold-temp"> 80</span><span class="tmp_unit">&deg;C</span> <button class="editbtn addpbh">Add Hop</button></td>
+                        <td>Session <span class=session-number>1</span></td>
+                        <td>start: <span class=session-start-temp>99</span><span class=tmp_unit>&deg;C</span></td>
+                        <td>keep:<span class=session-hold-temp> 80</span><span class=tmp_unit>&deg;C</span> <button class="editbtn addpbh">Add Hop</button></td>
                     </tr>
             </table>
         </div>
-        <!-- Automation  -->
 
-        <!-- recipes  -->
-        <div class="fn" id="recipes-p">
-            <div id="recipe-list-panel">
-                <ol id="recipe-list">
-                    <li class="ui-widget-content" id="recipe-options">Options</li>
-                    <li class="ui-widget-content" id="recipe-import">Import</li>
+
+
+        <div class=fn id=recipes-p>
+            <div id=recipe-list-panel>
+                <ol id=recipe-list>
+                    <li class=ui-widget-content id=recipe-options>Options</li>
+                    <li class=ui-widget-content id=recipe-import>Import</li>
                     <hr>
                 </ol>
             </div>
-            <div id="recipe-display">
-                <div id="recipe-options-panel">
+            <div id=recipe-display>
+                <div id=recipe-options-panel>
                     <h3>Recipe Options</h3>
                     <table>
                         <tr>
                             <td>Unit</td>
-                            <td colspan="3">
-                                <input type="radio" name="genunit" id="unit_metric" value="m">
-                                <label for="unit_metric">Metric</label>
-                                <input type="radio" name="genunit" id="unit_us" value="u">
-                                <label for="unit_us">US</label>
+                            <td colspan=3>
+                                <input type=radio name=genunit id=unit_metric value=m>
+                                <label for=unit_metric>Metric</label>
+                                <input type=radio name=genunit id=unit_us value=u>
+                                <label for=unit_us>US</label>
                             </td>
                         </tr>
 
                         <tr>
                             <td>Gravity/Plato</td>
-                            <td colspan="3">
-                                <input type="radio" name="sugarunit" id="su_gravity" value="g">
-                                <label for="su_gravity">Gravity</label>
-                                <input type="radio" name="sugarunit" id="su_plato" value="p">
-                                <label for="su_plato">&deg;Plato</label>
+                            <td colspan=3>
+                                <input type=radio name=sugarunit id=su_gravity value=g>
+                                <label for=su_gravity>Gravity</label>
+                                <input type=radio name=sugarunit id=su_plato value=p>
+                                <label for=su_plato>&deg;Plato</label>
                             </td>
                         </tr>
 
                         <tr>
-                            <td rowspan="6">Mash In Temperature</td>
-                            <td colspan="3">
-                                <input type="checkbox" name="prefer_infuse" id="mi_prefer_infuse">
-                                <label for="mi_prefer_infuse">Prefer INFUSE_TEMP in 1st rest</label>
+                            <td rowspan=6>Mash In Temperature</td>
+                            <td colspan=3>
+                                <input type=checkbox name=prefer_infuse id=mi_prefer_infuse>
+                                <label for=mi_prefer_infuse>Prefer INFUSE_TEMP in 1st rest</label>
                             </td>
                         </tr>
-                        <td colspan="3">
-                            <input type="radio" name="mashin_temp" id="mi_1stRest" value="1">
-                            <label for="mi_1stRest">As First Rest</label>
+                        <td colspan=3>
+                            <input type=radio name=mashin_temp id=mi_1stRest value=1>
+                            <label for=mi_1stRest>As First Rest</label>
                         </td>
                         </tr>
                         <tr>
-                            <td rowspan="3"><input type="radio" name="mashin_temp" id="mi_cal" value="c">
-                                <label for="mi_cal">Calculated</label></td>
-                            <td><label for="grain-temp">Grain Temperature</label></td>
-                            <td><input type="text" id="grain-temp" size="4"></input><span class="tmp_unit">&deg;C</span></td>
+                            <td rowspan=3><input type=radio name=mashin_temp id=mi_cal value=c>
+                                <label for=mi_cal>Calculated</label></td>
+                            <td><label for=grain-temp>Grain Temperature</label></td>
+                            <td><input type=text id=grain-temp size=4></input><span class=tmp_unit>&deg;C</span></td>
                         </tr>
                         <tr>
-                            <td><label for="equip-adj">Equipment Adjust</label></td>
-                            <td><input type="text" id="equip-adj" size="4"></input><span class="tmp_unit">&deg;C</span></td>
+                            <td><label for=equip-adj>Equipment Adjust</label></td>
+                            <td><input type=text id=equip-adj size=4></input><span class=tmp_unit>&deg;C</span></td>
                         </tr>
                         <tr>
-                            <td><label for="kettle-mass">Kettle equiv. mass</label></td>
-                            <td><input type="text" id="kettle-mass" size="4"></input><span id="kettlemass_unit">L</span></td>
+                            <td><label for=kettle-mass>Kettle equiv. mass</label></td>
+                            <td><input type=text id=kettle-mass size=4></input><span id=kettlemass_unit>L</span></td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="radio" name="mashin_temp" id="mi_fixed" value="s">
-                                <label for="mi_fixed">Specified</label>
+                                <input type=radio name=mashin_temp id=mi_fixed value=s>
+                                <label for=mi_fixed>Specified</label>
                             </td>
                             <td>
-                                <label for="mashin-temp">Temperature</label></td>
-                            <td><input type="text" id="mashin-stemp" size="4"></input><span class="tmp_unit">&deg;C</span>
+                                <label for=mashin-temp>Temperature</label></td>
+                            <td><input type=text id=mashin-stemp size=4></input><span class=tmp_unit>&deg;C</span>
                             </td>
                         </tr>
                         <tr>
-                            <td rowspan="2">Default Mash Out</td>
-                            <td colspan="2">
-                                <label for="mo-temp">Temperature</label></td>
-                            <td><input type="text" id="mo-temp" size="4"></input><span class="tmp_unit">&deg;C</span></td>
+                            <td rowspan=2>Default Mash Out</td>
+                            <td colspan=2>
+                                <label for=mo-temp>Temperature</label></td>
+                            <td><input type=text id=mo-temp size=4></input><span class=tmp_unit>&deg;C</span></td>
                         </tr>
                         <tr>
-                            <td colspan="2"><label for="mo-time">Time</label></td>
-                            <td><input type="text" id="mo-time" size="4"></input>M
+                            <td colspan=2><label for=mo-time>Time</label></td>
+                            <td><input type=text id=mo-time size=4></input>M
                             </td>
                         </tr>
                     </table>
                     <br>
-                    <button id="recipe-option-update">Update</button>
+                    <button id=recipe-option-update>Update</button>
                 </div>
-                <div id="recipe-import-panel">
+                <div id=recipe-import-panel>
                     <h3>Import BeerXML</h3>
-                    <div id="fileinputgrp">
-                        <input type="file" id="fileinput" />
+                    <div id=fileinputgrp>
+                        <input type=file id=fileinput />
                     </div><br>
-                    <div id="import-xml-pane">
+                    <div id=import-xml-pane>
                         <div>
-                            <select name="xml-recipe-select" id="xml-recipe-select">
-    	</select>
-                            <br>Save as<input type="text" size="20" maxlength="28" id="xml-savename"></input>
-                            <button id="xml-save">Save</button>
-                            <button id="xml-brew">Brew</button>
+                            <select name=xml-recipe-select id=xml-recipe-select>
+</select>
+                            <br>Save as<input type=text size=20 maxlength=28 id=xml-savename></input>
+                            <button id=xml-save>Save</button>
+                            <button id=xml-brew>Brew</button>
                         </div>
                     </div>
                 </div>
-                <div id="recipe-view-panel">
+                <div id=recipe-view-panel>
                     <h3>Recipe</h3>
                     <div>
-                        <button id="recipe-del">Delete</button>
-                        <button id="recipe-brew">Brew</button>
+                        <button id=recipe-del>Delete</button>
+                        <button id=recipe-brew>Brew</button>
                     </div>
                 </div>
             </div>
-            <div id="recipe-table">
+            <div id=recipe-table>
                 <hr>
-                <table id="xml-recipe">
+                <table id=xml-recipe>
                     <tr>
                         <td>
-                            <table class="subcat">
+                            <table class=subcat>
                                 <tr>
                                     <th>Name</th>
-                                    <td><span class="recipe-name"></span></td>
+                                    <td><span class=recipe-name></span></td>
                                 </tr>
                                 <tr>
                                     <th>Style</th>
-                                    <td><span class="recipe-style"></span></td>
+                                    <td><span class=recipe-style></span></td>
                                 </tr>
                                 <tr>
                                     <th>Batch Size</th>
-                                    <td><span class="batch-size"></span></td>
+                                    <td><span class=batch-size></span></td>
                                 </tr>
                                 <tr>
-                                    <th><span class="auto_value">Boil Time</span></th>
-                                    <td><span class="boil-time"></span></td>
+                                    <th><span class=auto_value>Boil Time</span></th>
+                                    <td><span class=boil-time></span></td>
                                 </tr>
                             </table>
                         </td>
@@ -3314,7 +3713,7 @@ $(function(){
 
                     <tr>
                         <td>
-                            <table class="subcat">
+                            <table class=subcat>
                                 <tr>
                                     <th>Efficiency</th>
                                     <th>OG</th>
@@ -3324,12 +3723,12 @@ $(function(){
                                     <th>IBU</th>
                                 </tr>
                                 <tr>
-                                    <td><span class="recipe-eff">-</span>%</td>
-                                    <td><span class="recipe-og"></span></td>
-                                    <td><span class="recipe-fg"></span></td>
-                                    <td><span class="recipe-abv"></span>%</td>
-                                    <td><span class="color-block"></span> <span class="recipe-color"></span></td>
-                                    <td><span class="recipe-ibu"></span></td>
+                                    <td><span class=recipe-eff>-</span>%</td>
+                                    <td><span class=recipe-og></span></td>
+                                    <td><span class=recipe-fg></span></td>
+                                    <td><span class=recipe-abv></span>%</td>
+                                    <td><span class=color-block></span> <span class=recipe-color></span></td>
+                                    <td><span class=recipe-ibu></span></td>
                                 </tr>
                             </table>
                         </td>
@@ -3339,20 +3738,20 @@ $(function(){
                     </tr>
                     <tr>
                         <td>
-                            <table class="subcat">
-                                <tr class="ferm-header">
+                            <table class=subcat>
+                                <tr class=ferm-header>
                                     <th>Fermentable</th>
                                     <th>Weight</th>
-                                    <th><span class="yieldtitle">Yield</span><span class="ppgtitle">PPG</span></th>
+                                    <th><span class=yieldtitle>Yield</span><span class=ppgtitle>PPG</span></th>
                                     <th>Color</th>
                                     <th>Note</th>
                                 </tr>
-                                <tr class="ferm-row">
-                                    <td class="ferm-name">TT</td>
+                                <tr class=ferm-row>
+                                    <td class=ferm-name>TT</td>
                                     <td class="ferm-weight RA"></td>
                                     <td class="ferm-yield RA"></td>
                                     <td class="ferm-color RA"></td>
-                                    <td class="ferm-af"></td>
+                                    <td class=ferm-af></td>
                                 </tr>
                             </table>
                         </td>
@@ -3362,8 +3761,8 @@ $(function(){
                     </tr>
                     <tr>
                         <td>
-                            <table class="subcat">
-                                <tr class="hop-header">
+                            <table class=subcat>
+                                <tr class=hop-header>
                                     <th></th>
                                     <th>Time</th>
                                     <th>Name</th>
@@ -3371,13 +3770,13 @@ $(function(){
                                     <th>alpha</th>
                                     <th>Note</th>
                                 </tr>
-                                <tr class="hop-row">
-                                    <td class="hop-order"></td>
-                                    <td class="hop-time"></td>
-                                    <td class="hop-name"></td>
+                                <tr class=hop-row>
+                                    <td class=hop-order></td>
+                                    <td class=hop-time></td>
+                                    <td class=hop-name></td>
                                     <td class="hop-weight RA"></td>
                                     <td class="hop-alpha RA"></td>
-                                    <td class="hop-note"></td>
+                                    <td class=hop-note></td>
                                 </tr>
                             </table>
                         </td>
@@ -3387,8 +3786,8 @@ $(function(){
                     </tr>
                     <tr>
                         <td>
-                            <table class="subcat">
-                                <tr class="mash-header">
+                            <table class=subcat>
+                                <tr class=mash-header>
                                     <th></th>
                                     <th>Name</th>
                                     <th>Temperature</th>
@@ -3396,12 +3795,12 @@ $(function(){
                                     <th>Type</th>
                                     <th>Water</th>
                                 </tr>
-                                <tr class="mash-row">
-                                    <td class="mash-autorest">
-                                        <td class="mash-name"></td>
+                                <tr class=mash-row>
+                                    <td class=mash-autorest>
+                                        <td class=mash-name></td>
                                         <td class="mash-temp RA"></td>
-                                        <td class="mash-time"></td>
-                                        <td class="mash-type"></td>
+                                        <td class=mash-time></td>
+                                        <td class=mash-type></td>
                                         <td class="mash-water RA"></td>
                                 </tr>
                             </table>
@@ -3412,18 +3811,18 @@ $(function(){
                     </tr>
                     <tr>
                         <td>
-                            <table class="subcat">
-                                <tr class="yeast-header">
+                            <table class=subcat>
+                                <tr class=yeast-header>
                                     <th>Name</th>
                                     <th>Lab/Product</th>
                                     <th>Temperature</th>
                                     <th>Attenuation</th>
                                 </tr>
-                                <tr class="yeast-row">
-                                    <td><span class="yeast-name"></span></td>
-                                    <td><span class="yeast-pid"></span></td>
-                                    <td><span class="yeast-temp"></span></td>
-                                    <td><span class="yeast-att"></span>%</td>
+                                <tr class=yeast-row>
+                                    <td><span class=yeast-name></span></td>
+                                    <td><span class=yeast-pid></span></td>
+                                    <td><span class=yeast-temp></span></td>
+                                    <td><span class=yeast-att></span>%</td>
                                 </tr>
                             </table>
                         </td>
@@ -3433,16 +3832,16 @@ $(function(){
                     </tr>
                     <tr>
                         <td>
-                            <table class="subcat">
-                                <tr class="fermstage-header">
+                            <table class=subcat>
+                                <tr class=fermstage-header>
                                     <th>Stage</th>
                                     <th>Temperature</th>
                                     <th>Duration</th>
                                 </tr>
-                                <tr class="fermstage-row">
-                                    <td><span class="ferm-stage"></span></td>
-                                    <td><span class="ferm-temp"></span></td>
-                                    <td><span class="ferm-time"></span> days</td>
+                                <tr class=fermstage-row>
+                                    <td><span class=ferm-stage></span></td>
+                                    <td><span class=ferm-temp></span></td>
+                                    <td><span class=ferm-time></span> days</td>
                                 </tr>
                             </table>
                         </td>
@@ -3451,284 +3850,266 @@ $(function(){
                         <th>Note:</th>
                     </tr>
                     <tr>
-                        <td class="recipe-note"></td>
+                        <td class=recipe-note></td>
                     </tr>
                 </table>
             </div>
         </div>
-        <!-- recipes  -->
 
-        <!-- Network  -->
-        <div class="fn" id="network-p">
+
+
+        <div class=fn id=network-p>
             <h2>Network Settings</h2>
             <table>
                 <tr>
                     <td>Host/Network Name</td>
-                    <td><input id="hostname" type="text" size="20" maxlength="20"></td>
+                    <td><input id=hostname type=text size=20 maxlength=20></td>
                 </tr>
                 <tr>
                     <td>Always need password</td>
-                    <td><input type="checkbox" id="protected" value="yes"></td>
+                    <td><input type=checkbox id=protected value=yes></td>
                 </tr>
                 <tr>
                     <td>New User Name</td>
-                    <td><input id="newusername" type="text" size="20" maxlength="20"></td>
+                    <td><input id=newusername type=text size=20 maxlength=20></td>
                 </tr>
                 <tr>
                     <td>New Password</td>
-                    <td><input id="newpasswd" type="password" size="20" maxlength="16"></td>
+                    <td><input id=newpasswd type=password size=20 maxlength=16></td>
                 </tr>
                 <tr>
                     <td>Retype new Password</td>
-                    <td><input id="newpasswd2" type="password" size="20" maxlength="16"></td>
+                    <td><input id=newpasswd2 type=password size=20 maxlength=16></td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="passmatch">New passwords don't match!!</td>
+                    <td colspan=2 id=passmatch>New passwords don't match!!</td>
                 </tr>
                 <tr>
                     <td>User Name</td>
-                    <td><input id="username" type="text" size="20" maxlength="20"></td>
+                    <td><input id=username type=text size=20 maxlength=20></td>
                 </tr>
                 <tr>
                     <td>Password</td>
-                    <td><input id="password" type="password" size="20" maxlength="16"></td>
+                    <td><input id=password type=password size=20 maxlength=16></td>
                 </tr>
                 <tr>
-                    <td><button id="wifidisc">Disconnect WiFi</button></td>
-                    <td><button id="savecfg">Save</button></td>
+                    <td><button id=wifidisc>Disconnect WiFi</button></td>
+                    <td><button id=savecfg>Save</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="saveok">New setting will be effective after restart.</td>
+                    <td colspan=2 id=saveok>New setting will be effective after restart.</td>
                 </tr>
                 <tr>
-                    <td colspan="2" id="savefail">Update failed!!</td>
+                    <td colspan=2 id=savefail>Update failed!!</td>
                 </tr>
             </table>
         </div>
-        <!-- Network  -->
-        <!-- Logs  -->
-        <div class="fn" id="brewlog-p">
+
+
+        <div class=fn id=brewlog-p>
             <em>Brew Logs</em>
-            <button id="listfile">Refresh</button>
-            <table id="loglist">
+            <button id=listfile>Refresh</button>
+            <table id=loglist>
                 <tr>
-                    <th style="width:30%;">Log</th>
-                    <th style="width:40%;">Date</th>
+                    <th style=width:30%>Log</th>
+                    <th style=width:40%>Date</th>
                     <th>Action</th>
                 </tr>
                 <tr>
-                    <td class="logid"></td>
-                    <td class="logdate"></td>
-                    <td><button class="dlbutton">Download</button><button class="viewbutton">View</button></td>
+                    <td class=logid></td>
+                    <td class=logdate></td>
+                    <td><button class=dlbutton>Download</button><button class=viewbutton>View</button></td>
                 </tr>
             </table>
             <br>
 
-            <div id="vchart" style="width:95%;">
-                <span id="viewlogname"></span>
-                <canvas id="vchart-canvas"></canvas>
+            <div id=vchart style=width:95%>
+                <span id=viewlogname></span>
+                <canvas id=vchart-canvas></canvas>
             </div>
 
         </div>
-        <!-- Logs  -->
 
 
-        <div class="fn" id="utility-p">
-            <fieldset class="commonset">
+
+        <div class=fn id=utility-p>
+            <fieldset class=commonset>
                 <legend>Volume</legend>
-                <input type="radio" name="volume_unit" id="volume_liter" value="L">
-                <label for="volume_liter">L</label>
-                <input type="radio" name="volume_unit" id="volume_gallon" value="G">
-                <label for="volume_gallon">gal</label>
-                <input type="radio" name="volume_unit" id="volume_quart" value="Q">
-                <label for="volume_quart">qt</label>
+                <input type=radio name=volume_unit id=volume_liter value=L>
+                <label for=volume_liter>L</label>
+                <input type=radio name=volume_unit id=volume_gallon value=G>
+                <label for=volume_gallon>gal</label>
+                <input type=radio name=volume_unit id=volume_quart value=Q>
+                <label for=volume_quart>qt</label>
             </fieldset>
 
-            <fieldset class="commonset">
+            <fieldset class=commonset>
                 <legend>Weight</legend>
-                <input type="radio" name="weight_unit" id="weight_kg" value="M">
-                <label for="weight_kg">kg</label>
-                <input type="radio" name="weight_unit" id="weight_lb" value="U">
-                <label for="weight_lb">lb</label>
+                <input type=radio name=weight_unit id=weight_kg value=M>
+                <label for=weight_kg>kg</label>
+                <input type=radio name=weight_unit id=weight_lb value=U>
+                <label for=weight_lb>lb</label>
             </fieldset>
-            <fieldset class="commonset">
+            <fieldset class=commonset>
                 <legend>Temperature</legend>
-                <input type="radio" name="temp_unit" id="temp_c" value="C">
-                <label for="temp_c">&deg;C</label>
-                <input type="radio" name="temp_unit" id="temp_f" value="F">
-                <label for="temp_f">&deg;F</label>
+                <input type=radio name=temp_unit id=temp_c value=C>
+                <label for=temp_c>&deg;C</label>
+                <input type=radio name=temp_unit id=temp_f value=F>
+                <label for=temp_f>&deg;F</label>
             </fieldset>
 
-            <br class="fieldsetspace">
+            <br class=fieldsetspace>
 
-            <fieldset class="FWSG">
+            <fieldset class=FWSG>
                 <legend>First Wort SG</legend>
                 <table>
                     <tr>
                         <th>Grains</th>
-                        <td><input size="5" class="grain weightinput fwsg"></input><span class="weight_u">kg</span></td>
+                        <td><input size=5 class="grain weightinput fwsg"></input><span class=weight_u>kg</span></td>
                     </tr>
                     <tr>
                         <th>Mash Water</th>
-                        <td><input size="5" class="water volinput fwsg"></input><span class="vol_u">L</span></td>
+                        <td><input size=5 class="water volinput fwsg"></input><span class=vol_u>L</span></td>
                     </tr>
                     <tr>
                         <th>FW SG</th>
-                        <td><span class="result"></span></td>
+                        <td><span class=result></span></td>
                     </tr>
                 </table>
             </fieldset>
-
-            <fieldset class="HYDROMETER">
+            <fieldset class=HYDROMETER>
                 <legend>Hydrometer</legend>
                 <table>
                     <tr>
                         <th>Gravity:</th>
-                        <td><input size="5" value="1.0" class="hydroinput sgfraction"></input>
+                        <td><input size=5 value=1.0 class="hydroinput sgfraction"></input>
                         </td>
                         <tr>
                             <tr>
                                 <th>Temperature:</th>
-                                <td> <input size="3" class="hydroinput tempinput sgtemp"></input><span class="tmp_u">&deg;C</span></td>
+                                <td> <input size=3 class="hydroinput tempinput sgtemp"></input><span class=tmp_u>&deg;C</span></td>
                             </tr>
                             <tr>
                                 <th>Corrected at</th>
-                                <td> <input size="3" value="20" class="hydroinput tempinput correctedTemp"></input><span class="tmp_u">&deg;C</span></td>
+                                <td> <input size=3 value=20 class="hydroinput tempinput correctedTemp"></input><span class=tmp_u>&deg;C</span></td>
                                 <tr>
                                     <tr>
                                         <th>Corrected SG:</th>
-                                        <td><span class="result"></span></td>
+                                        <td><span class=result></span></td>
                                     </tr>
                 </table>
             </fieldset>
-
-            <fieldset class="REFRACTO">
+            <fieldset class=REFRACTO>
                 <legend>Refractometer</legend>
                 <table>
                     <tr>
                         <th>Reading </th>
-                        <td><input size="3" class="brixinput brixreading"></input>%</td>
+                        <td><input size=3 class="brixinput brixreading"></input>%</td>
                     </tr>
                     <tr>
                         <th>Wort Correction</th>
-                        <td><input size="4" value="1.04" class="brixinput wortcorrection"></input>
+                        <td><input size=4 value=1.04 class="brixinput wortcorrection"></input>
                         </td>
                     </tr>
                     <tr>
                         <th>Corrected SG</th>
-                        <td><span class="result"></span></td>
+                        <td><span class=result></span></td>
                     </tr>
                 </table>
             </fieldset>
-
-            <fieldset class="BOILOFF">
+            <fieldset class=BOILOFF>
                 <legend>Boil off</legend>
                 <table>
                     <tr>
                         <th>Current Gravity</th>
-                        <td><input size="5" class="boiloffinput sg" value="1.0"></input>
+                        <td><input size=5 class="boiloffinput sg" value=1.0></input>
                         </td>
                     </tr>
                     <tr>
                         <th>Current Volume</th>
-                        <td><input size="5" class="boiloffinput vol" value="6"></input><span class="vol_u">L</span></td>
+                        <td><input size=5 class="boiloffinput vol" value=6></input><span class=vol_u>L</span></td>
                     </tr>
                     <tr>
                         <th>Desired SG</th>
-                        <td><input size="5" class="boiloffinput newsg" value="1.0"></input>
+                        <td><input size=5 class="boiloffinput newsg" value=1.0></input>
                         </td>
                     </tr>
                     <tr>
                         <th>New Volume</th>
-                        <td><span class="resultvol">--</span><span class="vol_u">L</span></td>
+                        <td><span class=resultvol>--</span><span class=vol_u>L</span></td>
                     </tr>
                     <tr>
                         <th>Desired Volume</th>
-                        <td><input size="5" class="boiloffinput newvol"></input><span class="vol_u">L</span></td>
+                        <td><input size=5 class="boiloffinput newvol"></input><span class=vol_u>L</span></td>
                     </tr>
                     <tr>
                         <th>New SG</th>
-                        <td><span class="resultsg">--</span></td>
+                        <td><span class=resultsg>--</span></td>
                     </tr>
                 </table>
             </fieldset>
         </div>
-        <!-- utility -->
-
-        <!-- About  -->
-        <div class="fn" id="about-p">
+        <div class=fn id=about-p>
             <p> BrewManiacEx
-                <br> firmware version: <span id="firmware-version"></span>
-                <br> HTML/JS version: <span id="js-version"></span>
-                <p>By Vito Tai. <a href="http://vito.tw/?cat=11" target="_blank">More Info.</a></p>
-                <p>Powered by</p>
+                <br> firmware version: <span id=firmware-version></span>
+                <br> HTML/JS version: <span id=js-version></span>
+                <p>By Vito Tai. <a href="http://vito.tw/?cat=11" target=_blank>More Info.</a></p>
+                <p style={text-align:left;}>Powered by</p>
                 <ul>
-                    <li><a href="http://jquery.com" target="_blank">jQuery</a></li>
-                    <li><a href="http://plugins.adchsm.me/slidebars/" target="_blank">Slidebars by Adam Smith</a></li>
-                    <li><a href="http://olance.github.io/jQuery-switchButton/" target="_blank">jQuery UI iPhone-like Switch Button by Olivier Lance</a></li>
-                    <li><a href="http://www.chartjs.org" target="_blank">Chart.js</a></li>
+                    <li><a href=http://jquery.com target=_blank>jQuery</a></li>
+                    <li><a href=http://plugins.adchsm.me/slidebars/ target=_blank>Slidebars by Adam Smith</a></li>
+                    <li><a href=http://olance.github.io/jQuery-switchButton/ target=_blank>jQuery UI iPhone-like Switch Button by Olivier Lance</a></li>
+                    <li><a href=http://www.chartjs.org target=_blank>Chart.js</a></li>
                 </ul>
                 <div>
-                    <select name="soundid" id="soundid">
-      <option value="open">Welcome</option>
-      <option value="tr">Temperature Reached</option>
-      <option value="addhop">Time to Add Hop</option>
-      <option value="addmalt">Add Malt</option>
-      <option value="boil">Start Boil</option>
-      <option value="boilend">Boil Finished</option>
-      <option value="bye">Brew Finished</option>
-      <option value="chill">Time to Chill</option>
-      <option value="cool">Time to Cool</option>
-      <option value="iodine">Time for iodeine</option>
-      <option value="maltin">Doughing In</option>
-      <option value="mashout">Mash Out</option>
-      <option value="nmash">Next Mash step</option>
-      <option value="removemalt">Remove Malt</option>
-      <option value="whirlpool">Whirlpoool</option>
-      <option value="disc">Disconnected</option>
-    </select>
-                    <button id="playsound">Play</button>
+                    <select name=soundid id=soundid>
+<option value=open>Welcome</option>
+<option value=tr>Temperature Reached</option>
+<option value=addhop>Time to Add Hop</option>
+<option value=addmalt>Add Malt</option>
+<option value=boil>Start Boil</option>
+<option value=boilend>Boil Finished</option>
+<option value=bye>Brew Finished</option>
+<option value=chill>Time to Chill</option>
+<option value=cool>Time to Cool</option>
+<option value=iodine>Time for iodeine</option>
+<option value=maltin>Doughing In</option>
+<option value=mashout>Mash Out</option>
+<option value=nmash>Next Mash step</option>
+<option value=removemalt>Remove Malt</option>
+<option value=whirlpool>Whirlpoool</option>
+<option value=disc>Disconnected</option>
+</select>
+                    <button id=playsound>Play</button>
                 </div>
         </div>
-
     </div>
-    <!-- <div id="sb-site"> -->
-    <!-- Dialogs -->
-
-    <div id="d_ConnectionError" title="Error!" class="dialog">
+    <div id=d_ConnectionError title=Error! class=dialog>
         <p>The connection to BrewManiac is down. It might be wireless issue or ESP8266 issue. Check your Brew ASAP.</p>
     </div>
-    <div id="d_warning" title="Warning!" class="no-close dialog">
+    <div id=d_warning title=Warning! class="no-close dialog">
         <ul>
             <li>Never leave your brew unattended!</li>
             <li>Wireless connection may be unstable, and the status may be out of sync.</li>
             <li>Use at your own risk.</li>
         </ul>
-        <label><input type="checkbox" id="nshow" class="dialog"> Don't show this again. </label>
+        <label><input type=checkbox id=nshow class=dialog> Don't show this again. </label>
     </div>
-
-    <div id="d_home_confirm" title="Note:" class="dialog">
+    <div id=d_home_confirm title=Note: class=dialog>
         <p>Do you Really want to END current job and go back to Main screen?</p>
     </div>
-
-
-    <div id="dialog-confirm" title="">
-        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>
-            <span class="dialog-msg"></span></p>
+    <div id=dialog-confirm title>
+        <p><span class="ui-icon ui-icon-alert" style="float:left;margin:12px 12px 20px 0"></span>
+            <span class=dialog-msg></span></p>
     </div>
-
-    <div id="dialog-alert" title="Alert!">
-        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>
-            <span class="dialog-msg"></span></p>
+    <div id=dialog-alert title=Alert!>
+        <p><span class="ui-icon ui-icon-alert" style="float:left;margin:12px 12px 20px 0"></span>
+            <span class=dialog-msg></span></p>
     </div>
-
-    <div id="dialog-file" title="Select File">
-        <p><input type="file"></input>
-            <span class="dialog-msg"></span></p>
+    <div id=dialog-file title="Select File">
+        <p><input type=file></input>
+            <span class=dialog-msg></span></p>
     </div>
-
-    
-
 </body>
 
 </html>

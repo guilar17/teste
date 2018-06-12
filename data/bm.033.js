@@ -17,8 +17,7 @@ JSON.stringify = JSON.stringify || function(a) {
         }
         return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}")
     }
-};
-/*! jQuery v1.12.3 | (c) jQuery Foundation | jquery.org/license */
+}; /*! jQuery v1.12.3 | (c) jQuery Foundation | jquery.org/license */
 ! function(a, b) {
     "object" == typeof module && "object" == typeof module.exports ? module.exports = a.document ? b(a, !0) : function(a) {
         if (!a.document) throw new Error("jQuery requires a window with a document");
